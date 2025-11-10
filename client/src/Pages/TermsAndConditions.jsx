@@ -75,7 +75,7 @@ const TermsAndConditions = () => {
         initial="hidden"
         animate="visible"
       >
-        <h1 className="text-4xl font-extrabold text-gray-800 mb-4 border-b pb-2"  style={titleStyle}>
+        <h1 className="text-4xl font-extrabold text-gray-800 mt-10 mb-4 border-b pb-2"  style={titleStyle}>
           Terms and Conditions
         </h1>
         <p className="text-sm text-gray-500 mb-8">

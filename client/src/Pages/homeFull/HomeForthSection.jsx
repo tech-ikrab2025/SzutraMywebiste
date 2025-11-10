@@ -38,7 +38,7 @@ const HomeForthSection = () => {
                     {/* Applying responsive text size for better readability on smaller screens */}
                     <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight drop-shadow-lg"
                         style={titleStyle}>
-                        Luxury redefined through the art of intricate Zari craftsmanship.
+                        Szutra brings heritage embroidery to life with royal craftsmanship.
                     </p>
                 </div>
             </div>

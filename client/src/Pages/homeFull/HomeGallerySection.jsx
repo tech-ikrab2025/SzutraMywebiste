@@ -8,40 +8,74 @@ const PRIMARY_BLUE = '#1b2e4e';
 const products = [
     {
         id: 1,
-        src: "/SzutraProduct_1.png", 
-        alt: 'Elegant Zari Saree',
-        richDescription: 'This exquisite Elegant Zari Saree is a testament to timeless grace. Woven with the finest silk and intricate gold thread, it drapes beautifully, offering a regal look for any grand occasion. The lightweight fabric ensures comfort without compromising on opulence. A true masterpiece of traditional Indian textile art.',
+        src: "/Zardosi (1).png", 
+        alt: 'Zardosi',
+        richDescription: 'Royal metallic thread embroidery with rich detail',
     },
     {
         id: 2,
-        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnGeoi_w083nCr_BjbjckN8adwcHEYGFE5tA&s",
-        alt: 'Royal Blue Zari Lehenga',
-        richDescription: 'The Royal Blue Zari Lehenga is designed for the modern queen. Its deep, rich blue color provides a stunning contrast to the heavy gold zari embroidery, covering the voluminous skirt and choli. This piece is perfect for a wedding reception or a major festive celebration, embodying traditional luxury.',
+        src: "/SzutraProduct_1.png",
+        alt: 'Aari ',
+        richDescription: 'Fine hand chain-stitch art done with hooked needle',
     },
     {
         id: 3,
-        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKkeb3eLI-jPuJItYA0G1J83fOviM5QyiIqQ&s",
-        alt: 'Green Zari Kurta Set',
-        richDescription: 'This vibrant Green Zari Kurta Set is a comfortable yet chic choice. The subtle zari detailing on the neckline and cuffs adds a touch of sophistication, making it ideal for smaller gatherings or office parties. The breathability of the fabric ensures all-day comfort.',
+        src: "/SzutraProduct_1.png",
+        alt: 'Dabka',
+        richDescription: 'Coiled wire embroidery adding depth and shine',
     },
     {
         id: 4,
-        src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjbGP9Ju7qUwUiiGzpwiSMwccbCTFZd5IS0A&s',
-        alt: 'Sky Blue Zari Dress',
-        richDescription: 'A breath of fresh air, the Sky Blue Zari Dress offers a contemporary silhouette with traditional artistry. The delicate zari border complements the flowing fabric, creating an ethereal look. Perfect for a summer daytime event or a bridal shower.',
+        src: '/SzutraProduct_1.png',
+        alt: 'Beads',
+        richDescription: 'Hand-stitched beads for sparkle and texture',
     },
     {
         id: 5,
-        src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqiR8aKNRTwyhHBzoNOILH7ubEwvqgDtA9CQ&s',
+        src: '/SzutraProduct_1.png',
         alt: 'Golden Zari Dupatta',
-        richDescription: 'The Golden Zari Dupatta is the perfect accessory to elevate any outfit. Handwoven with shimmering gold threads, it adds a layer of unparalleled luxury and tradition. Its versatile design pairs beautifully with a plain suit or a simple lehenga.',
+        richDescription: 'Golden Zari Dupatta, Shimmering gold, luxury, elevates any outfit.',
     },
     {
         id: 6,
-        src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsoW846fpP_uq3q8AMZgfNiEmbzaa_Oc76Pg&s',
-        alt: 'Silver Zari Gown',
-        richDescription: 'Make a statement with the Silver Zari Gown. This modern gown features geometric patterns in silver zari, giving a unique, contemporary edge to traditional weaving. Its structure and shimmer are guaranteed to turn heads at any evening gala.',
-    }
+        src: '/SzutraProduct_1.png',
+        alt: 'Cutwork',
+        richDescription: 'Elegant open-pattern design crafted by hand',
+    },
+
+    {
+        id: 7,
+        src: '/SzutraProduct_1.png',
+        alt: 'Sequins',
+        richDescription: 'Shimmering sequins that bring fabric to life',
+    },
+
+    {
+        id: 8,
+        src: '/SzutraProduct_1.png',
+        alt: 'Thread Work ',
+        richDescription: 'Colorful silk threads create elegant patterns ',
+    },
+
+    {
+        id: 9,
+        src: '/SzutraProduct_1.png',
+        alt: 'Mirror Work ',
+        richDescription: 'Tiny mirrors stitched for festive sparkle',
+    },
+
+    {
+        id: 10,
+        src: '/SzutraProduct_1.png',
+        alt: 'Stone Work ',
+        richDescription: 'Shiny stones add luxury and brilliance',
+    },
+     {
+        id: 11,
+        src: '/SzutraProduct_1.png',
+        alt: 'Gota Patti Work  ',
+        richDescription: 'Gold ribbons stitched for royal charm',
+    },
 ];
 
 const HomeGallerySection = () => {
@@ -52,25 +86,27 @@ const HomeGallerySection = () => {
         msOverflowStyle: "none",
     };
     const titleStyle = {
-        fontFamily: 'Cinzel Decorative, serif', 
+        fontFamily: 'Playfair Display, Georgia, serif', 
         textShadow: '0 0 0px rgba(0, 0, 0, 0.9)',
         color: ACCENT_GOLD,
     };
-      const ParagraphStyle = {
-        fontFamily: 'Playfair Display, Georgia, serif', 
-    };
+      
     
     return (
         <section id="home-gallery" className="py-16 md:py-24 bg-gray-50 overflow-hidden">
             <div className="mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 
-                    className="text-4xl md:text-7xl font-extrabold text-center mb-12"
+                    className="text-4xl md:text-7xl font-extrabold text-center mb-3"
                     style={ titleStyle }
                 >
                     Our Exclusive Collection
                 </h2>
+                <div 
+    className="w-24 h-[6px] mb-6 mx-auto" // h-[6px] is equivalent to h-1.5, giving a custom thickness
+    style={{ backgroundColor: ACCENT_GOLD }} 
+></div>
                 <p 
-                    className="text-center text-lg md:text-1xl text-[#cfa866] max-w-3xl mx-auto mb-16" style={ParagraphStyle}
+                    className="text-center text-lg md:text-2xl text-gray-800 mx-auto mb-8" 
                 >
                     Discover the artistry of Zari through our curated selection of masterpieces.
                 </p>
@@ -83,7 +119,7 @@ const HomeGallerySection = () => {
                     {products.map(product => (
                         <div 
                             key={product.id} 
-                            className="flex-none w-72 snap-center rounded-lg shadow-xl bg-white overflow-hidden transition-transform duration-300 hover:scale-105" style={ParagraphStyle}
+                            className="flex-none w-72 snap-center rounded-lg shadow-xl bg-white overflow-hidden transition-transform duration-300 hover:scale-105" 
                         >
                             <a 
                                 // Action: Only pass the unique 'id' to the detail page.
@@ -112,7 +148,7 @@ const HomeGallerySection = () => {
                                                 {product.alt}
                                             </h3>
                                             <p className="text-gray-800 mb-4 text-sm">
-                                                Explore the intricate details and fine craftsmanship.
+                                               {product.richDescription}
                                             </p>
                                         </div>
                                         

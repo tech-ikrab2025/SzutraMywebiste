@@ -25,7 +25,7 @@ const HeroSection = () => {
     return (
         // Set the main container to w-screen h-screen to ensure the video covers the full viewport
         // relative is necessary for the absolute children positioning
-        <header className="relative w-screen h-screen min-h-[600px] overflow-hidden bg-black">
+        <header className="relative w-screen h-[90vh] overflow-hidden bg-black">
             
             {/* Background Video - Using object-cover to ensure no edge is visible */}
             <video
@@ -33,7 +33,7 @@ const HeroSection = () => {
                 loop
                 muted
                 playsInline
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 w-full h-[90vh] object-cover"
                 poster="placeholder-image.jpg" 
                 // Added key to force remount/reload if video issues persist
                 key="szutra-hero-video"
@@ -56,7 +56,7 @@ const HeroSection = () => {
             >
                 
                 {/* Brand and Headline */}
-                <h2 className="text-xl sm:text-2xl font-light tracking-widest uppercase mb-4 drop-shadow-md">
+                <h2 className="text-xl sm:text-2xl uppercase mb-4 drop-shadow-md">
                     Masterpieces Woven by SZUTRA
                 </h2>
                 
@@ -69,7 +69,7 @@ const HeroSection = () => {
                 </h1>
 
                 {/* Tagline */}
-                <p className="text-xl sm:text-2xl max-w-3xl font-light drop-shadow-md mb-12">
+                <p className="text-xl sm:text-2xl max-w-3xl drop-shadow-md mb-12">
                     Opulent threads. Modern silhouettes. Elevate your style with genuine Zari.
                 </p>
 
@@ -81,7 +81,7 @@ const HeroSection = () => {
                     //target="_blank" // This ensures the link opens in a new tab
                     //rel="noopener noreferrer" // Security best practice for target="_blank"
                     className={`
-                        text-black font-semibold py-3 px-10 rounded-full shadow-xl 
+                        text-gray-800 font-semibold py-3 px-10 rounded-full shadow-xl 
                         uppercase tracking-wider transition duration-300 ease-in-out
                         hover:scale-105 transform active:scale-95 border-2 border-transparent hover:border-white
                         focus:outline-none focus:ring-4 focus:ring-white focus:ring-opacity-50
