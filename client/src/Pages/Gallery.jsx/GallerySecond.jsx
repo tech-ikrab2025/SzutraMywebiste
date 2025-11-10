@@ -13,58 +13,112 @@ const ACCENT_GOLD = '#cfa866';
 const PLACEHOLDER_IMG = "https://placehold.co/600x400/3A3A3A/CFA866?text=Image+Missing";
 
 const resultsData = [
-  // 🏠 HOME SERVICES
-  { title: "BrightClean Solutions", imageSrc: "/SzutraProduct_1 (1).png", category: "Home Services" },
-  { title: "EcoAir Duct Cleaning", imageSrc: PLACEHOLDER_IMG, category: "Home Services" },
-  { title: "ProRoof Masters", imageSrc: PLACEHOLDER_IMG, category: "Home Services" },
+  //  Zardosi
+  {  imageSrc: "/Zardosi/Zardosi-1.png", category: "Zardosi" },
+  {  imageSrc:"/Zardosi/Zardosi-2.png",  category: "Zardosi" },
+  {  imageSrc: "/Zardosi/Zardosi-3.png", category: "Zardosi" },
+  {  imageSrc: "/Zardosi/Zardosi-4.png", category: "Zardosi" },
+  {  imageSrc: "/Zardosi/Zardosi-5.png", category: "Zardosi" },
+  {  imageSrc: "/Zardosi/Zardosi.png",   category: "Zardosi" },
 
-  // 🏥 MEDICAL
-  { title: "SmileCraft Dental", imageSrc: PLACEHOLDER_IMG, category: "Medical" },
-  { title: "VisionPlus Eye Care", imageSrc: PLACEHOLDER_IMG, category: "Medical" },
-  { title: "FitLife Clinic", imageSrc: PLACEHOLDER_IMG, category: "Medical" },
+  // 🏥Aari
+  {  imageSrc: "/aari work/aari work-1.png", category: "Aari" },
+  {  imageSrc: "/aari work/aari work-2.png", category: "Aari" },
+  {  imageSrc: "/aari work/aari work-3.png", category: "Aari" },
+  {  imageSrc: "/aari work/aari work-4.png", category: "Aari" },
+  {  imageSrc: "/aari work/aari work-5.png", category: "Aari" },
+  {  imageSrc: "/aari work/aari work.png",   category: "Aari" },
 
-  // ⚖️ LEGAL
-  { title: "JusticePro Attorneys", imageSrc: PLACEHOLDER_IMG, category: "Legal" },
-  { title: "LawTrust Group", imageSrc: PLACEHOLDER_IMG, category: "Legal" },
-  { title: "DefendRight Firm", imageSrc: PLACEHOLDER_IMG, category: "Legal" },
+  // ⚖️ Dabka
+  {  imageSrc: "/Dabka work/Dabka-1.png", category: "Dabka" },
+  {  imageSrc: "/Dabka work/Dabka-2.png", category: "Dabka" },
+  {  imageSrc: "/Dabka work/Dabka-3.png", category: "Dabka" },
+  {  imageSrc: "/Dabka work/Dabka-4.png", category: "Dabka" },
+  {  imageSrc: "/Dabka work/Dabka-5.png", category: "Dabka" },
+  {  imageSrc: "/Dabka work/Dabka.png",   category: "Dabka" },
 
-  // 🚗 AUTOMOTIVE
-  { title: "Colt Exhaust", imageSrc: PLACEHOLDER_IMG, category: "Automotive" },
-  { title: "Springfield Hyundai", imageSrc: PLACEHOLDER_IMG, category: "Automotive" },
-  { title: "AutoTech Motors", imageSrc: PLACEHOLDER_IMG, category: "Automotive" },
 
-  // 🏢 B2B
-  { title: "SupplyChain Pro", imageSrc: PLACEHOLDER_IMG, category: "B2B" },
-  { title: "BizLink Connect", imageSrc: PLACEHOLDER_IMG, category: "B2B" },
-  { title: "TradeEdge Solutions", imageSrc: PLACEHOLDER_IMG, category: "B2B" },
+  // 🚗 Beads
+  {  imageSrc: "/Beadwork/Beadwork-1.png", category: "Beads" },
+  {  imageSrc: "/Beadwork/Beadwork-2.png", category: "Beads" },
+  {  imageSrc: "/Beadwork/Beadwork-3.png", category: "Beads" },
+  {  imageSrc: "/Beadwork/Beadwork-4.png", category: "Beads" },
+  {  imageSrc: "/Beadwork/Beadwork-5.png", category: "Beads" },
+  {  imageSrc: "/Beadwork/Beadwork.png",   category: "Beads" },
 
-  // 🛍️ RETAIL
-  { title: "UrbanThreads", imageSrc: PLACEHOLDER_IMG, category: "Retail" },
-  { title: "ShopSmart", imageSrc: PLACEHOLDER_IMG, category: "Retail" },
-  { title: "StyleBay", imageSrc: PLACEHOLDER_IMG, category: "Retail" },
+  // 🏢 Golden Zari Dupatta
+//   {  imageSrc: "/Zardosi/Zardosi-1.png", category: "Golden Zari Dupatta" },
+//   {  imageSrc: "/Zardosi/Zardosi-1.png", category: "Golden Zari Dupatta" },
+//   {  imageSrc: "/Zardosi/Zardosi-1.png", category: "Golden Zari Dupatta" },
+//   {  imageSrc: "/Zardosi/Zardosi-1.png", category: "Golden Zari Dupatta" },
+//   {  imageSrc: "/Zardosi/Zardosi-1.png", category: "Golden Zari Dupatta" },
+//   {  imageSrc: "/Zardosi/Zardosi-1.png", category: "Golden Zari Dupatta" },
 
-  // ⚙️ INDUSTRIAL
-  { title: "UPSW", imageSrc: PLACEHOLDER_IMG, category: "Industrial" },
-  { title: "IronTech Systems", imageSrc: PLACEHOLDER_IMG, category: "Industrial" },
-  { title: "MechaCorp", imageSrc: PLACEHOLDER_IMG, category: "Industrial" },
+  // 🛍️ Cutwork
+  {  imageSrc:"/Cutwork/Cutwork-1.png",  category: "Cutwork" },
+  {  imageSrc: "/Cutwork/Cutwork-2.png", category: "Cutwork" },
+  {  imageSrc: "/Cutwork/Cutwork-3.png", category: "Cutwork" },
+  {  imageSrc: "/Cutwork/Cutwork-4.png", category: "Cutwork" },
+  {  imageSrc: "/Cutwork/Cutwork-5.png", category: "Cutwork" },
+  {  imageSrc: "/Cutwork/Cutwork.png",   category: "Cutwork" },
 
-  // 🧰 SMALL BUSINESS
-  { title: "Baker’s Choice", imageSrc: PLACEHOLDER_IMG, category: "Small Business" },
-  { title: "PetCare Plus", imageSrc: PLACEHOLDER_IMG, category: "Small Business" },
-  { title: "CraftHive", imageSrc: PLACEHOLDER_IMG, category: "Small Business" },
+  // ⚙️ Sequins
+  {  imageSrc: "/Sequins work/Sequins work-1.png", category: "Sequins" },
+  {  imageSrc: "/Sequins work/Sequins work-2.png", category: "Sequins" },
+  {  imageSrc: "/Sequins work/Sequins work-3.png", category: "Sequins" },
+  {  imageSrc: "/Sequins work/Sequins work-4.png", category: "Sequins" },
+  {  imageSrc: "/Sequins work/Sequins work-5.png", category: "Sequins" },
+  {  imageSrc: "/Sequins work/Sequins work.png",   category: "Sequins" },
+
+  // 🧰 Thread Work
+  {  imageSrc: "/thread work/thread work-1.png", category: "Thread Work" },
+  {  imageSrc: "/thread work/thread work-2.png", category: "Thread Work" },
+  {  imageSrc: "/thread work/thread work-3.png", category: "Thread Work" },
+  {  imageSrc: "/thread work/thread work-4.png", category: "Thread Work" },
+  {  imageSrc: "/thread work/thread work-5.png", category: "Thread Work" },
+  {  imageSrc: "/thread work/thread work.png",   category: "Thread Work" },
+
+
+// 🧰 Mirror Work
+  {  imageSrc: "/Mirror work/Mirror work-1.png", category: "Mirror Work" },
+  {  imageSrc: "/Mirror work/Mirror work-2.png", category: "Mirror Work" },
+  {  imageSrc: "/Mirror work/Mirror work-3.png", category: "Mirror Work" },
+  {  imageSrc: "/Mirror work/Mirror work-4.png", category: "Mirror Work" },
+  {  imageSrc: "/Mirror work/Mirror work-5.png", category: "Mirror Work" },
+  {  imageSrc: "/Mirror work/Mirror work.png",   category: "Mirror Work" },
+
+// 🧰 Stone Work
+  {  imageSrc: "/Stone Work/Stone Wrok-1.png", category: "Stone Work" },
+  {  imageSrc: "/Stone Work/Stone Wrok-2.png", category: "Stone Work" },
+  {  imageSrc: "/Stone Work/Stone Wrok-3.png", category: "Stone Work" },
+  {  imageSrc: "/Stone Work/Stone Wrok-4.png", category: "Stone Work" },
+  {  imageSrc: "/Stone Work/Stone Wrok-5.png", category: "Stone Work" },
+  {  imageSrc: "/Stone Work/Stone Wrok.png",   category: "Stone Work" },
+
+
+// 🧰 Gota Patti Work 
+  {  imageSrc: "/Gota Patti Work/Gota Patti Work-1.png", category: "Gota Patti Work" },
+  {  imageSrc: "/Gota Patti Work/Gota Patti Work-2.png", category: "Gota Patti Work" },
+  {  imageSrc: "/Gota Patti Work/Gota Patti Work-3.png", category: "Gota Patti Work" },
+  {  imageSrc: "/Gota Patti Work/Gota Patti Work-4.png", category: "Gota Patti Work" },
+  {  imageSrc: "/Gota Patti Work/Gota Patti Work-5.png", category: "Gota Patti Work" },
+  {  imageSrc: "/Gota Patti Work/Gota Patti Work.png",   category: "Gota Patti Work" },
 ];
 
 /* ---------------- COMPONENTS & VARIANTS ---------------- */
 
 const categories = [
-  "Home Services",
-  "Medical",
-  "Legal",
-  "Automotive",
-  "B2B",
-  "Retail",
-  "Industrial",
-  "Small Business",
+  "Zardosi",
+  "Aari",
+  "Dabka",
+  "Beads",
+//   "Golden Zari Dupatta",
+  "Cutwork",
+  "Sequins",
+  "Thread Work",
+  "Mirror Work",
+  "Stone Work",
+  "Gota Patti Work",
 ];
 
 // Animation variants for card appearance
@@ -149,9 +203,9 @@ const ResultCard = ({ result, index }) => {
             </div>
 
             {/* Title */}
-            <div className="p-5 text-center" style={titleStyle}>
+            {/* <div className="p-5 text-center" style={titleStyle}>
                 <h3 className="text-xl font-bold text-[#CFA866]">{result.title}</h3>
-            </div>
+            </div> */}
         </motion.div>
     );
 };
@@ -164,7 +218,7 @@ export default function GallerySecond() {
         color: ACCENT_GOLD,
     };
     // Set default category to 'Home Services' as per the screenshot
-    const [activeCategory, setActiveCategory] = useState("Home Services");
+    const [activeCategory, setActiveCategory] = useState("Zardosi");
 
     // Filter the results based on the active category
     const filteredResults = resultsData.filter(

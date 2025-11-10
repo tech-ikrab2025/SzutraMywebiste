@@ -86,17 +86,13 @@ const ProductDetailPage = () => {
     const [imageLoaded, setImageLoaded] = useState(false);
 
     // Style for the gold accents
-    const goldTextStyle = { color: ACCENT_GOLD };
+     const goldTextStyle = { color: ACCENT_GOLD };
 
     // Style for the main heading
     const titleStyle = {
         fontFamily: 'Playfair Display, Georgia, serif',
         color: PRIMARY_BLUE,
         textShadow: `1px 1px 2px rgba(0, 0, 0, 0.1)`, 
-    };
-    
-    const ParagraphStyle = {
-        fontFamily: 'Playfair Display, Georgia, serif',
     };
 
     return (
@@ -151,7 +147,7 @@ const ProductDetailPage = () => {
 
 
                         {/* --- Description and Features Block --- */}
-                        <div className="space-y-6 text-gray-700 text-lg" style={ParagraphStyle}>
+                        <div className="space-y-6 text-gray-700 text-lg">
                             <p>
                                 <strong style={{ color: PRIMARY_BLUE }}>Product Description:</strong>
                             </p>
@@ -161,7 +157,7 @@ const ProductDetailPage = () => {
 
                             {/* --- Key Features Block (Conditional Rendering) --- */}
                             {featuresListElement && (
-                                <div className='pt-6 border-t border-gray-200'>
+                                <div className='pt-6 border-gray-200'>
                                     <h3 
                                         className="text-2xl font-bold mb-3" 
                                         style={goldTextStyle}
@@ -186,13 +182,13 @@ const ProductDetailPage = () => {
                     rel="noopener noreferrer" // Security best practice for target="_blank"
                     className={`
     mt-8 pt-4 block mx-auto border-t border-gray-200 
-    text-white font-semibold py-2 px-6 sm:py-3 sm:px-8 lg:py-4 lg:px-10 
+    text-[#1b2e4e] font-semibold py-2 px-6 sm:py-3 sm:px-8 lg:py-4 lg:px-10 
     rounded-full shadow-xl uppercase tracking-wider transition duration-300 ease-in-out 
     bg-[#cfa866] hover:scale-105 transform active:scale-95 border-2 border-transparent hover:border-white
     focus:outline-none focus:ring-4 focus:ring-white focus:ring-opacity-50
     inline-flex items-center justify-center
 `}
-                    style={titleStyle} 
+                     
                     aria-label="Shop our new Zari collection now"
                 >
                  Place Order

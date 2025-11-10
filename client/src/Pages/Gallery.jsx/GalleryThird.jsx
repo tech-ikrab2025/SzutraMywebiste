@@ -8,7 +8,7 @@ const ACCENT_GOLD = '#cfa866';
 const galleryItems = [
     { id: 1, url: "/AboutUsImage.png"},
     { id: 2, url: "/GalleryImage_2.png"},
-    { id: 3, url: "https://placehold.co/2560x1080/C7F464/FFFFFF?text=3.+WIDER+VIEW+(21:9)"},
+    { id: 3, url: "/home page new image.png"},
     { id: 4, url: "https://placehold.co/1920x1080/4ECDC4/FFFFFF?text=4.+Responsive+Solution"},
     { id: 5, url: "https://placehold.co/1920x1080/8D99AE/FFFFFF?text=5.+Final+Concept"},
     { id: 6, url: "https://placehold.co/1920x1080/8D99AE/FFFFFF?text=6.+Extra+Image"},

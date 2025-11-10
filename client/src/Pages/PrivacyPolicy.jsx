@@ -86,21 +86,7 @@ const PrivacyPolicy = () => {
         // Set the primary background to a deep dark color
         <div className="min-h-screen font-sans antialiased" style={{ backgroundColor: '#FFFFFF', color: ACCENT_GOLD }}> 
 
-            {/* Simulated Header Navigation */}
-            {/* Updated header background and border for dark theme */}
-            <header className={`sticky top-0 z-10 backdrop-blur-sm shadow-xl border-b`} style={{ backgroundColor: `${PRIMARY_DARK}a0`, borderColor: BORDER_COLOR }}>
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-                    <motion.div
-                        initial={{ x: -20, opacity: 0 }}
-                        animate={{ x: 0, opacity: 1 }}
-                        transition={{ delay: 0.1 }}
-                        className="text-2xl font-extrabold tracking-wider"
-                        style={{ color: ACCENT_GOLD }} // Use gold for the logo
-                    >
-                        SZUTRA
-                    </motion.div>
-                </div>
-            </header>
+            
 
             <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16"  style={ParagraphStyle}>
 
@@ -113,7 +99,7 @@ const PrivacyPolicy = () => {
                 >
                     {/* Removed bg-gradient-to-r from-indigo-400 to-pink-500 */}
                     <h1 
-                        className="text-5xl md:text-7xl font-extrabold leading-tight" 
+                        className="text-5xl md:text-7xl font-extrabold leading-tight mt-10" 
                         style={titleStyle} // Applies Playfair Display, text-shadow, and ACCENT_GOLD color
                     >
                         PRIVACY POLICY

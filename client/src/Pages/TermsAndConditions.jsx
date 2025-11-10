@@ -88,7 +88,7 @@ const TermsAndConditions = () => {
             className="mb-8"
             variants={sectionVariants}
           >
-            <h2 className="text-2xl font-semibold text-[#cfa866] mb-3 border-l-4 border-[#cfa866] pl-3">
+            <h2 className="text-2xl font-semibold text-[#cfa866] mb-3 border-l-4 border-[#cfa866] pl-3" style={titleStyle}>
               {index + 1}. {section.title}
             </h2>
             <p className="text-gray-700 leading-relaxed">

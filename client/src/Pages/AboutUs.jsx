@@ -13,10 +13,11 @@ import ValuesGrid from './AboutUs/ValuesGrid';
 const companyData = {
   mission: "We are the curators of bespoke zari luxury, supplying premier fashion houses with textiles woven from timeless heritage.",
   story: [
-    { year: 2010, title: "Craftsmanship & Heritage", description: "We respect and uphold the rich, centuries-old tradition of Zari work. Every piece of fabric we produce honors this legacy of artistry, merging meticulous hand-skill with modern precision to create textiles that are truly exceptional." },
-    { year: 2015, title: "Unyielding Quality", description: "Quality is non-negotiable. From selecting the finest base silks and threads to implementing rigorous multi-point inspections, we commit to manufacturing a product that meets the highest standards of luxury fashion—consistency, luster, and durability are guaranteed." },
-    { year: 2020, title: "Design Innovation", description: "While rooted in tradition, we are always forward-thinking. Our team is dedicated to continuous research and development, creating exclusive, on-trend Zari patterns and applications that provide our customer brands with a distinct competitive edge." },
-    { year: 2025, title: "Integrity & Reliability", description: "We operate with total transparency and honesty. Brands choose us because they trust us to deliver what we promise—on time, on spec, and on budget. Our reputation is woven into every yard of cloth." },
+    { year: 2010, title: "Craftsmanship & Heritage", description: "We respect and uphold the rich, centuries-old tradition of Zari work. Every piece of fabric we produce honors this legacy of artistry, merging meticulous hand-skill with modern precision to create textiles that are truly exceptional.",
+      illustration: "SzutraLogo_1.png" },// NEW PROP for the large illustration},
+    { year: 2015, title: "Unyielding Quality", description: "Quality is non-negotiable. From selecting the finest base silks and threads to implementing rigorous multi-point inspections, we commit to manufacturing a product that meets the highest standards of luxury fashion—consistency, luster, and durability are guaranteed.",illustration: "SzutraLogo_1.png" },
+    { year: 2020, title: "Design Innovation", description: "While rooted in tradition, we are always forward-thinking. Our team is dedicated to continuous research and development, creating exclusive, on-trend Zari patterns and applications that provide our customer brands with a distinct competitive edge.",illustration: "SzutraLogo_1.png" },
+    { year: 2025, title: "Integrity & Reliability", description: "We operate with total transparency and honesty. Brands choose us because they trust us to deliver what we promise—on time, on spec, and on budget. Our reputation is woven into every yard of cloth.",illustration: "SzutraLogo_1.png" },
   ],
   
   values: [
@@ -36,12 +37,12 @@ const AboutUs = () => {
   return (
     <motion.div
       // Using hex codes for background and text colors
-      className="min-h-screen bg-[#fcfaf7] text-[#333333] font-sans" style={titleStyle}
+      className="min-h-screen bg-[#fcfaf7] text-[#333333] font-sans" 
       variants={containerVariants}
       initial="hidden"
       animate="visible"
     >
-      <HeroSection mission={companyData.mission} />
+      <HeroSection mission={companyData.mission} style={titleStyle}/>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-24">
         

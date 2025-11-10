@@ -83,7 +83,7 @@ const ContactUs = () => {
       return;
     }
 try {
-    const res = await axios.post("https://sutrawebiste.onrender.com/api/auth/register", formData, {
+    const res = await axios.post("http://localhost:3000/api/auth/register", formData, {
         headers: {
           "Content-Type": "application/json",
           "x-auth-token": "A5A38fg7R28A8771E13Q",
@@ -120,7 +120,7 @@ try {
           }}>
             Get in <span className="text-[#cfa866]">Touch</span>
           </h1>
-          <p className="mt-4 text-xl text-gray-600 max-w-2xl mx-auto tracking-wider" style={{
+          <p className="mt-4 text-xl text-gray-600 max-w-2xl mx-auto" style={{
             fontFamily: "Playfair Display, Georgia, serif",
             wordSpacing: "5px",
           }}>

@@ -25,7 +25,7 @@ const HeroSection = () => {
     return (
         // Set the main container to w-screen h-screen to ensure the video covers the full viewport
         // relative is necessary for the absolute children positioning
-        <header className="relative w-screen h-[90vh] overflow-hidden bg-black">
+        <header className="relative w-screen h-[90vh] min-h-[600px] overflow-hidden bg-black">
             
             {/* Background Video - Using object-cover to ensure no edge is visible */}
             <video
@@ -70,7 +70,7 @@ const HeroSection = () => {
 
                 {/* Tagline */}
                 <p className="text-xl sm:text-2xl max-w-3xl drop-shadow-md mb-12">
-                    Opulent threads. Modern silhouettes. Elevate your style with genuine Zari.
+                    {/* Opulent threads. Modern silhouettes. Elevate your style with genuine Zari. */}
                 </p>
 
                 

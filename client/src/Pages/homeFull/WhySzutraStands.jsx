@@ -98,7 +98,7 @@ const WhySzutraStands = () => {
                     {/* UL is an inline element within the centered text block. 
                       We must make the UL centered and remove the list style.
                     */}
-                    <p className="text-gray-800 mb-6 text-lg" style={ParagraphStyle} > 
+                    <p className="text-gray-800 mb-6 text-lg" > 
                         <ul className="list-none inline-block text-left"> {/* Center UL container, but align list items left */}
                             <li>• Authentic hand embroidery by expert artisans</li>
                             <li>• Custom designs & sampling for designers</li>

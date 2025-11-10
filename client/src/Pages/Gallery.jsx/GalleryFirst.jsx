@@ -14,7 +14,7 @@ const GalleryFirst = () => {
     return (
         // Set the main container to w-screen h-screen to ensure the video covers the full viewport
         // relative is necessary for the absolute children positioning
-        <header className="relative w-screen h-screen min-h-[600px] overflow-hidden bg-black">
+        <header className="relative w-screen h-[100vh] min-h-[600px] overflow-hidden bg-black">
             
             {/* Background Video - Using object-cover to ensure no edge is visible */}
             <video
@@ -22,7 +22,7 @@ const GalleryFirst = () => {
                 loop
                 muted
                 playsInline
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 w-full h-[100vh] object-cover"
                 poster="placeholder-image.jpg" 
                 // Added key to force remount/reload if video issues persist
                 key="szutra-Galleryhero-video"
