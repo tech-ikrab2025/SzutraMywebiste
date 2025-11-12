@@ -135,7 +135,7 @@ try {
             className="lg:col-span-2 bg-white p-8 sm:p-12 rounded-xl shadow-2xl"
             variants={itemVariants}
           >
-            <h2 className="text-3xl font-bold mb-6 text-[#a5864e]" style={{
+            <h2 className="text-3xl font-bold mb-6 text-[#cfa866]" style={{
             fontFamily: "Playfair Display, Georgia, serif",
             wordSpacing: "5px",
           }}>
@@ -251,13 +251,16 @@ try {
                               type="submit"
                               whileHover={{ scale: 1.02 }}
                               whileTap={{ scale: 0.98 }}
-                              className={`w-full inline-flex justify-center py-3 px-6 border border-transparent rounded-md shadow-sm text-lg font-medium text-white transition duration-200 ${
+                              className={`w-full inline-flex justify-center py-3 px-6 border border-transparent 
+                                rounded-full shadow-sm text-lg font-medium text-[#1b2e4e] 
+                                transition duration-200 border-2 border-transparent hover:border-white
+                                focus:outline-none focus:ring-4 focus:ring-white ${
                                 Object.values(errors).some((err) => err !== "")
                                   ? "bg-blue-400 cursor-not-allowed"
                                   : `bg-[#cfa866] hover:bg-[#cfa866]`
                               }`}
                               disabled={Object.values(errors).some((err) => err !== "")} style={{
-            fontFamily: "Playfair Display, Georgia, serif",
+            
             wordSpacing: "5px",
           }}
                             >
@@ -265,24 +268,23 @@ try {
                             </motion.button>
             </form>
           </motion.div>
-
+ 
           {/* Section 2: Contact Info (unchanged) */}
           {/* ... existing contact info and address code ... */}
        <div className="lg:col-span-1 space-y-8">
             {/* Contact Info Card */}
             <motion.div
-              className="bg-white p-8 rounded-xl shadow-xl border-l-4 border-[#cfa866]"
+              className="bg-white p-8 rounded-xl shadow-xl border-l-4 border-r-4 border-[#cfa866]"
               variants={itemVariants}
               transition={{ delay: 0.3 }}
             >
-              <h3 className="text-2xl font-bold text-[#a5864e] mb-4" style={{
+              <h3 className="text-2xl font-bold text-[#cfa866] mb-4" style={{
             fontFamily: "Playfair Display, Georgia, serif",
             wordSpacing: "5px",
           }}>
                 Contact Details
               </h3>
               <div className="space-y-4 text-gray-600" style={{
-            fontFamily: "Playfair Display, Georgia, serif",
             wordSpacing: "5px",
           }}>
                 <p>
@@ -302,18 +304,18 @@ try {
 
             {/* Address Card */}
             <motion.div
-              className="bg-white p-8 rounded-xl shadow-xl border-l-4 border-[#cfa866]"
+              className="bg-white p-8 rounded-xl shadow-xl border-l-4 border-r-4 border-[#cfa866]"
               variants={itemVariants}
               transition={{ delay: 0.4 }}
             >
-              <h3 className="text-2xl font-bold text-[#a5864e] mb-4" style={{
+              <h3 className="text-2xl font-bold text-[#cfa866] mb-4" style={{
             fontFamily: "Playfair Display, Georgia, serif",
             wordSpacing: "5px",
           }}>
                 Main Office (Kolkata Branch)
               </h3>
               <p className="text-gray-600" style={{
-            fontFamily: "Playfair Display, Georgia, serif",
+           
             wordSpacing: "5px",
           }}>
                 364, Shantipally, Rajdanga, 
@@ -326,18 +328,18 @@ try {
               </p>
             </motion.div>
             <motion.div
-              className="bg-white p-8 rounded-xl shadow-xl border-l-4 border-[#cfa866]"
+              className="bg-white p-8 rounded-xl shadow-xl border-l-4 border-r-4 border-[#cfa866]"
               variants={itemVariants}
               transition={{ delay: 0.4 }}
             >
-              <h3 className="text-2xl font-bold text-[#a5864e] mb-4" style={{
+              <h3 className="text-2xl font-bold text-[#cfa866] mb-4" style={{
             fontFamily: "Playfair Display, Georgia, serif",
             wordSpacing: "5px",
           }}>
               Branch Office (Siliguri Branch)
               </h3>
               <p className="text-gray-600" style={{
-            fontFamily: "Playfair Display, Georgia, serif",
+            
             wordSpacing: "5px",
           }}>
                 2nd Floor, Strong enclave,

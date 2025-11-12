@@ -19,24 +19,24 @@ const projects = [
     {
         title: "Preserving Art, Creating Elegance",
         description: "At Szutra, we keep ancient artistry alive — shaping it into modern masterpieces that inspire.",
-        imageUrl: "/Fifth_2.png", 
+        imageUrl: "/Fifth_2.webp", 
     },
     {
         title: "True luxury is handmade",
         description: "True luxury is handmade — where patience meets perfection and every detail shines.",
-        imageUrl: "/Fifth_3.png", 
+        imageUrl: "/Fifth_3.webp", 
         
     },
     {
         title: "Crafted by Hand, Honoured by Heritage",
         description: "From royal Zardosi to modern couture, every piece reflects India’s golden legacy of art.",
-        imageUrl: "/Fifth_4.png", 
+        imageUrl: "/Fifth_4.webp", 
         
     },
     {
         title: "Where Every Thread Tells a Stor",
         description: "Each stitch carries the soul of our artisans — blending tradition, passion, and timeless beauty.",
-        imageUrl: "/Fifth_5.png", 
+        imageUrl: "/Fifth_5.webp", 
         
     },
 ];
@@ -45,16 +45,16 @@ const projects = [
 const featuredProject = {
     title: "Luxury Begins with a Single Stitch",
     description: "True luxury is handmade — where patience meets perfection and every detail shines.",
-    imageUrl: "/FifthSec_1.png", 
+    imageUrl: "/FifthSec_1.webp", 
     
 };
 
 
 // Helper component for a single card (MODIFIED: Font sizes reduced)
-const ProjectCard = ({ title, description, imageUrl, link = "#", isFeatured = false }) => (
+const ProjectCard = ({ title, description, imageUrl, isFeatured = false }) => (
     // Height is managed here: featured is tall, standard is regular
     <a 
-        href={link} 
+         
         className={`relative overflow-hidden group block w-full rounded-xl shadow-lg transition duration-300 transform hover:shadow-2xl hover:scale-[1.01] 
         ${isFeatured ? 'h-[30rem] md:h-full' : 'h-80'}`} // Using specific heights for better grid control on mobile
     >

@@ -13,11 +13,14 @@ import ValuesGrid from './AboutUs/ValuesGrid';
 const companyData = {
   mission: "We are the curators of bespoke zari luxury, supplying premier fashion houses with textiles woven from timeless heritage.",
   story: [
-    { year: 2010, title: "Craftsmanship & Heritage", description: "We respect and uphold the rich, centuries-old tradition of Zari work. Every piece of fabric we produce honors this legacy of artistry, merging meticulous hand-skill with modern precision to create textiles that are truly exceptional.",
-      illustration: "SzutraLogo_1.png" },// NEW PROP for the large illustration},
-    { year: 2015, title: "Unyielding Quality", description: "Quality is non-negotiable. From selecting the finest base silks and threads to implementing rigorous multi-point inspections, we commit to manufacturing a product that meets the highest standards of luxury fashion—consistency, luster, and durability are guaranteed.",illustration: "SzutraLogo_1.png" },
-    { year: 2020, title: "Design Innovation", description: "While rooted in tradition, we are always forward-thinking. Our team is dedicated to continuous research and development, creating exclusive, on-trend Zari patterns and applications that provide our customer brands with a distinct competitive edge.",illustration: "SzutraLogo_1.png" },
-    { year: 2025, title: "Integrity & Reliability", description: "We operate with total transparency and honesty. Brands choose us because they trust us to deliver what we promise—on time, on spec, and on budget. Our reputation is woven into every yard of cloth.",illustration: "SzutraLogo_1.png" },
+    { year: "1st", title: "Craftsmanship & Heritage", description: "At Szutra, we believe that true elegance is born from the art of fine craftsmanship. We are a designer zari manufacturing house dedicated to creating exquisite designs that blend heritage with innovation. Our work reflects a deep respect for traditional Indian artistry, brought to life with a modern design approach.Each piece we produce is more than just fabric — it’s a harmony of creativity, culture, and precision. Our zari threads are not only woven with skill but also with passion, carrying the essence of luxury that defines timeless fashion.",
+      illustration: "Craftsmanship & Heritage.webp" },// NEW PROP for the large illustration},
+    { year: "2nd", title: "Unyielding Quality", description: "We design and manufacture premium zari work that enhances the collections of renowned fashion brands across the industry. Our expertise lies in creating intricate zari designs that elevate fabrics into statements of art.Every creation that leaves our studio undergoes careful design consideration, material selection, and skilled handwork — ensuring the final product embodies sophistication and superior quality. Whether it’s couture pieces, bridal ensembles, or luxury ethnic wear, our zari brings life, texture, and radiance to every design.",
+      illustration: "Unyielding Quality.webp" },
+    { year: "3rd", title: "Design Innovation", description: "Our artisans are the soul of our brand — the true custodians of our craft. Each artisan carries generations of experience, blending age-old techniques with a modern sense of beauty. Their hands turn delicate threads into masterpieces, weaving emotion, tradition, and creativity into every motif.We take immense pride in providing them an environment that values their artistry and nurtures their skill. Their dedication transforms our vision into tangible beauty — where every shimmer of zari tells a story of human touch and heritage.",
+      illustration: "Design Innovation-1.webp" },
+    { year: "4th", title: "Integrity & Reliability", description: "Our craftsmanship stands as a tribute to the timeless charm of handmade perfection. From selecting the finest threads to the final finishing, every step of our process is guided by precision and passion.Our design philosophy lies in the details — delicate patterns, refined textures, and graceful finishes that celebrate both cultural richness and contemporary taste. The result is a collection of zari designs that exude sophistication, radiance, and enduring elegance.",
+      illustration: "Integrity & Reliability.webp" },
   ],
   
   values: [
@@ -37,7 +40,7 @@ const AboutUs = () => {
   return (
     <motion.div
       // Using hex codes for background and text colors
-      className="min-h-screen bg-[#fcfaf7] text-[#333333] font-sans" 
+      className="min-h-screen bg-[#fcfaf7] text-[#333333] font-sans " 
       variants={containerVariants}
       initial="hidden"
       animate="visible"

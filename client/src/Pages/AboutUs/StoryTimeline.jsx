@@ -53,7 +53,7 @@ const StoryTimeline = ({ story }) => {
     };
     
   return (
-    <section className="relative container mx-auto px-4 py-8">
+    <section className="relative container mx-auto px-4 py-8 overflow-hidden">
       <h2 className="text-4xl font-bold text-center mb-16 text-[#cfa866]" style={titleStyle}>Our Journey of Growth</h2>
       
       {/* Central Vertical Timeline Line (Desktop Only) */}
@@ -110,13 +110,13 @@ const StoryTimeline = ({ story }) => {
                   </div>
 
                   {/* Horizontal Connector Line (This line needs to point toward the text/card) */}
-                  <div 
+                  {/* <div 
                     className={`
                       absolute top-1/2 h-0.5 w-12 bg-[#cfa866]/50 transform -translate-y-1/2 z-0
                       // Line points opposite of the content text block's column
                       ${isLeft ? 'right-full' : 'left-full'}
                     `}
-                  ></div>
+                  ></div> */}
               </div>
             
               {/* === Story Content Card Column (md: Alternates left/right) === */}

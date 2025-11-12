@@ -8,68 +8,77 @@ const PRIMARY_BLUE = '#1b2e4e';
 const products = [
     {
         id: 1,
-        src: "/Zardosi/Zardosi-1.png",
+        src: "/Zardosi/Zardosi-1.webp",
         alt: 'Zardosi',
         richDescription: 'Royal metallic thread embroidery with rich detail',
+        productDetails: 'Zardozi is an opulent, centuries-old Persian embroidery technique meaning "gold work," which flourished under the Mughal Empire. It is characterized by its heavy, three-dimensional texture, achieved by sewing metallic threads (Zari, traditionally gold or silver, now often gilded wire) and embellishments like beads and stones onto a sturdy base fabric like velvet or silk. The work is typically done on a large wooden frame (Adda) using an Aari (hooked needle). Today, Zardozi symbolizes luxury and is primarily used for grand ceremonial and bridal attire, featuring intricate floral and Mughal-inspired motifs.',
     },
     {
         id: 2,
-        src: "/aari work/aari work-1.png",
+        src: "/aari work/aari work-1.webp",
         alt: 'Aari ',
         richDescription: 'Fine hand chain-stitch art done with hooked needle',
+        productDetails:'Aari Work is a revered Indian embroidery form distinguished by its use of a specialized, long, fine, hooked needle, also known as an Aari or tambour needle. The technique involves creating continuous, intricate loops to form a dense chain stitch texture, giving the finished product a smooth, neat appearance often mistaken for machine embroidery. Highly versatile, Aari work is valued for the speed and precision with which it secures small beads, sequins, and metallic Zari wires to the fabric. It is foundational to many Indian embroideries and is widely used across the subcontinent, especially in Kashmir, for bridal and festive attire, featuring delicate floral vines and geometric patterns.',
     },
     {
         id: 3,
-        src: "/Dabka work/Dabka-1.png",
+        src: "/Dabka work/Dabka-1.webp",
         alt: 'Dabka',
         richDescription: 'Coiled wire embroidery adding depth and shine',
+        productDetails:'Dabka Work is an elaborate form of metallic embroidery, categorized under Zardozi, that uses a thin, tightly coiled metallic wire called Dabka. The key feature is the wire being cut and stitched through its hollow center, which creates a prominent raised, three-dimensional texture on the fabric surface. It is used on luxurious fabrics for bridal and formal wear to create opulent, shimmering, floral, and geometric motifs.',
     },
     {
         id: 4,
-        src: '/Beadwork/Beadwork-1.png',
+        src: '/Beadwork/Beadwork-1.webp',
         alt: 'Beads',
         richDescription: 'Hand-stitched beads for sparkle and texture',
+        productDetails:'Beadwork involves meticulously stitching various beads (like seed beads, bugle beads, and pearls) onto fabric to create decorative, textured patterns. The technique is valued for adding weight, dimension, and intense sparkle to garments, ranging from delicate outlining to complete fabric coverage for a dramatic effect. Due to its versatility, Beadwork is frequently combined with other embroideries, such as Zardozi or Aari, making it an essential feature in high-fashion couture and traditional bridal attire.',
     },
-    // ... (rest of your product data)
     {
-        id: 6,
-        src: '/Cutwork/Cutwork-1.png',
+        id: 5,
+        src: '/Cutwork/Cutwork-1.webp',
         alt: 'Cutwork',
         richDescription: 'Elegant open-pattern design crafted by hand',
+        productDetails:'Cutwork involves a two-step process: first, outlining design areas with dense embroidery (usually buttonhole or satin stitch), and second, carefully cutting out the fabric within these outlines to expose the underlying surface. This meticulous technique creates intricate, framed voids, giving the textile a structured, lace-like appearance through the contrast of solid fabric and open space. It is often employed to create elaborate floral and geometric designs on fine materials, adding a classic, handcrafted sense of luxury to items ranging from formal clothing to high-quality household linens.',
+    },
+
+    {
+        id: 6,
+        src: '/Sequins work/Sequins work-1.webp',
+        alt: 'Sequins',
+        richDescription: 'Shimmering sequins that bring fabric to life',
+        productDetails:'Sequins work is a dynamic embroidery technique that involves the strategic application of tiny, lightweight, reflective discs—made from materials like plastic or metal—to the textile surface. These discs, often referred to as sitara, can be cupped, flat, or faceted to enhance their light-reflecting quality. The sequins are secured to the fabric using a needle and thread, often in fast, efficient methods like the Aari (Tambour) technique, or sewn down meticulously one-by-one. It is widely used in high-glamour fashion, including dance costumes, evening wear, and bridal accents, due to its ability to create a dense, glittering texture and dramatic, highly visible patterns.',
     },
 
     {
         id: 7,
-        src: '/Sequins work/Sequins work-1.png',
-        alt: 'Sequins',
-        richDescription: 'Shimmering sequins that bring fabric to life',
+        src: '/thread work/thread work-1.webp',
+        alt: 'Thread Work ',
+        richDescription: 'Colorful silk threads create elegant patterns ',
+        productDetails:'Thread work is the foundation of most embroidery, utilizing non-metallic threads (like silk or cotton) to create designs. The technique relies entirely on the mastery of various stitches to achieve texture, shading, and dimension (e.g., satin stitch, crewel work). Celebrated for its versatility and comfort, thread work allows for intricate, colorful motifs on everything from cotton kurtas to luxurious silk sarees, emphasizing pure fiber manipulation.',
     },
 
     {
         id: 8,
-        src: '/thread work/thread work-1.png',
-        alt: 'Thread Work ',
-        richDescription: 'Colorful silk threads create elegant patterns ',
+        src: '/Mirror work/Mirror work-1.webp',
+        alt: 'Mirror Work ',
+        richDescription: 'Tiny mirrors stitched for festive sparkle',
+        productDetails: 'Mirror work (Shisha) is a vibrant Indian embroidery, mainly from Gujarat and Rajasthan, that involves securing small, reflective mirrors onto fabric with intricate framework stitches. The key feature is the light-reflecting sparkle and it is widely used for festive clothing (like Chaniya Cholis), folk costumes, and home décor, often believed to ward off the evil eye.',
     },
 
     {
         id: 9,
-        src: '/Mirror work/Mirror work-1.png',
-        alt: 'Mirror Work ',
-        richDescription: 'Tiny mirrors stitched for festive sparkle',
-    },
-
-    {
-        id: 10,
-        src: '/Stone Work/Stone Wrok-1.png',
+        src: '/Stone Work/Stone Wrok-1.webp',
         alt: 'Stone Work ',
         richDescription: 'Shiny stones add luxury and brilliance',
+        productDetails:'Stone Work is an opulent embellishment technique where various types of rhinestones, crystals, glass gems, or semi-precious stones are attached to fabric, either by secure embroidery stitches or strong adhesive. The defining feature is the creation of a dramatic, glittering, and weighted texture due to the intense sparkle and density of the stones. It is highly favored in high-end bridal wear, evening gowns, and couture fashion to create luxurious, highly reflective designs, often in combination with Zardozi or beadwork.',
     },
     {
-        id: 11,
-        src: '/Gota Patti Work/Gota Patti Work-1.png',
+        id: 10,
+        src: '/Gota Patti Work/Gota Patti Work-1.webp',
         alt: 'Gota Patti Work  ',
         richDescription: 'Gold ribbons stitched for royal charm',
+        productDetails:'Gota Patti Work is a unique Indian appliqué technique from Rajasthan that involves folding and cutting pieces of woven metallic ribbon (Gota) into shapes like leaves (patti) and flowers. These pieces are stitched onto fabric, creating a dense but remarkably lightweight metallic surface. Unlike heavy Zardozi, Gota Patti provides high visual sparkle, making it a favorite for bridal wear and festive attire across the subcontinent.',
     },
 ];
 
@@ -241,7 +250,7 @@ const HomeGallerySection = () => {
                                     className="flex-none w-72 snap-center rounded-lg shadow-xl bg-white overflow-hidden transition-transform duration-300 hover:scale-105"
                                 >
                                     <a
-                                        href={`/product-details?id=${product.id}&heading=${encodeURIComponent(product.alt)}&image=${encodeURIComponent(product.src)}&desc=${encodeURIComponent(product.richDescription)}`}
+                                        href={`/product-details?id=${product.id}&heading=${encodeURIComponent(product.alt)}&image=${encodeURIComponent(product.src)}&desc=${encodeURIComponent(product.productDetails)}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="block h-full w-full group"

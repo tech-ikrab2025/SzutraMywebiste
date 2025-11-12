@@ -33,7 +33,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-[#f8f8f5] text-[#1d1d1d] shadow-2xl mt-16 " style={ParagraphStyle} >
+    <footer className="bg-[#f8f8f5] text-[#1d1d1d] shadow-2xl mt-16 "  >
       {/* Top section: Brand Info, Links, and Contact */}
       <div className="max-w-7xl mx-auto pt-6 pb-10 px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-y-12 gap-x-8">
         
@@ -42,7 +42,7 @@ export default function Footer() {
           <a href="/" className="block h-1px w-2px py-2"> 
               <img
                 className="h-1px w-2px rounded-md "
-                src="/SzutraLogo_1.png"
+                src="/SzutraLogo_1.webp"
                 alt="Szutra Brand Logo"
                 onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/100x40/cfa866/ffffff?text=SZUTRA" }}
               />
@@ -61,7 +61,7 @@ export default function Footer() {
 
         {/* Column 2: Navigation Links (Takes 3/12 columns on large screens) */}
         <div className="md:col-span-1 lg:col-span-3">
-          <h3 className="font-bold text-lg mb-5 uppercase tracking-wider" style={{ color: ACCENT_GOLD }}>
+          <h3 className="font-bold text-lg mb-5 uppercase tracking-wider text-[#cfa866]" style={ParagraphStyle}>
             Quick Links
           </h3>
           <ul className="space-y-3">
@@ -80,7 +80,7 @@ export default function Footer() {
         
         {/* Column 3: Contact Details (Takes 6/12 columns on large screens) */}
         <div className="md:col-span-1 lg:col-span-6">
-          <h3 className="font-bold text-lg mb-5 uppercase tracking-wider" style={{ color: ACCENT_GOLD }}>
+          <h3 className="font-bold text-lg mb-5 uppercase tracking-wider text-[#cfa866]" style={ParagraphStyle}>
             Contact & Location
           </h3>
           <ul className="space-y-4">
@@ -91,8 +91,8 @@ export default function Footer() {
               >
                 <a 
                   href={detail.href} 
-                  className="flex items-start group hover:text-[#cfa866] transition-colors duration-200"
-                  target={detail.text.startsWith('http') ? '_blank' : '_self'}
+                  className="flex items-start group hover:text-[#cfa866] transition-colors duration-200 "
+                  target='_blank'
                   rel="noopener noreferrer"
                 >
                   <span className="mr-3 mt-1 text-[#1d1d1d] group-hover:text-[#cfa866] transition-colors">{detail.icon}</span>
@@ -121,7 +121,7 @@ export default function Footer() {
         
         {/* The legal links are now grouped into one list and moved to the right */}
         <div className="space-x-4 order-1 md:order-2">
-          <a href="#" className="hover:text-[#cfa866] transition">
+          <a href="/TermsAndConditions" className="hover:text-[#cfa866] transition">
             Terms of Use
           </a>
           <span className="opacity-50">|</span>

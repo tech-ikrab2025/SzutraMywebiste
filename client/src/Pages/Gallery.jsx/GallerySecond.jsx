@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-// Load Tailwind CSS from CDN for styling (required in single-file React/HTML environments)
-const TailwindLoader = () => (
-    <script src="https://cdn.tailwindcss.com"></script>
-);
+
+ //Load Tailwind CSS from CDN for styling (required in single-file React/HTML environments)
+ const TailwindLoader = () => (
+     <script src="https://cdn.tailwindcss.com"></script>
+ );
 
 const ACCENT_GOLD = '#cfa866';
 
@@ -14,95 +15,95 @@ const PLACEHOLDER_IMG = "https://placehold.co/600x400/3A3A3A/CFA866?text=Image+M
 
 const resultsData = [
   //  Zardosi
-  {  imageSrc: "/Zardosi/Zardosi-1.png", category: "Zardosi" },
-  {  imageSrc:"/Zardosi/Zardosi-2.png",  category: "Zardosi" },
-  {  imageSrc: "/Zardosi/Zardosi-3.png", category: "Zardosi" },
-  {  imageSrc: "/Zardosi/Zardosi-4.png", category: "Zardosi" },
-  {  imageSrc: "/Zardosi/Zardosi-5.png", category: "Zardosi" },
-  {  imageSrc: "/Zardosi/Zardosi.png",   category: "Zardosi" },
+  {  imageSrc: "/Zardosi/Zardosi-1.webp", category: "Zardosi" },
+  {  imageSrc:"/Zardosi/Zardosi-2.webp",  category: "Zardosi" },
+  {  imageSrc: "/Zardosi/Zardosi-3.webp", category: "Zardosi" },
+  {  imageSrc: "/Zardosi/Zardosi-4.webp", category: "Zardosi" },
+  {  imageSrc: "/Zardosi/Zardosi-5.webp", category: "Zardosi" },
+  {  imageSrc: "/Zardosi/Zardosi.webp",   category: "Zardosi" },
 
   // 🏥Aari
-  {  imageSrc: "/aari work/aari work-1.png", category: "Aari" },
-  {  imageSrc: "/aari work/aari work-2.png", category: "Aari" },
-  {  imageSrc: "/aari work/aari work-3.png", category: "Aari" },
-  {  imageSrc: "/aari work/aari work-4.png", category: "Aari" },
-  {  imageSrc: "/aari work/aari work-5.png", category: "Aari" },
-  {  imageSrc: "/aari work/aari work.png",   category: "Aari" },
+  {  imageSrc: "/aari work/aari work-1.webp", category: "Aari" },
+  {  imageSrc: "/aari work/aari work-2.webp", category: "Aari" },
+  {  imageSrc: "/aari work/aari work-3.webp", category: "Aari" },
+  {  imageSrc: "/aari work/aari work-4.webp", category: "Aari" },
+  {  imageSrc: "/aari work/aari work-5.webp", category: "Aari" },
+  {  imageSrc: "/aari work/aari work.webp",   category: "Aari" },
 
   // ⚖️ Dabka
-  {  imageSrc: "/Dabka work/Dabka-1.png", category: "Dabka" },
-  {  imageSrc: "/Dabka work/Dabka-2.png", category: "Dabka" },
-  {  imageSrc: "/Dabka work/Dabka-3.png", category: "Dabka" },
-  {  imageSrc: "/Dabka work/Dabka-4.png", category: "Dabka" },
-  {  imageSrc: "/Dabka work/Dabka-5.png", category: "Dabka" },
-  {  imageSrc: "/Dabka work/Dabka.png",   category: "Dabka" },
+  {  imageSrc: "/Dabka work/Dabka-1.webp", category: "Dabka" },
+  {  imageSrc: "/Dabka work/Dabka-2.webp", category: "Dabka" },
+  {  imageSrc: "/Dabka work/Dabka-3.webp", category: "Dabka" },
+  {  imageSrc: "/Dabka work/Dabka-4.webp", category: "Dabka" },
+  {  imageSrc: "/Dabka work/Dabka-5.webp", category: "Dabka" },
+  {  imageSrc: "/Dabka work/Dabka.webp",   category: "Dabka" },
 
 
   // 🚗 Beads
-  {  imageSrc: "/Beadwork/Beadwork-1.png", category: "Beads" },
-  {  imageSrc: "/Beadwork/Beadwork-2.png", category: "Beads" },
-  {  imageSrc: "/Beadwork/Beadwork-3.png", category: "Beads" },
-  {  imageSrc: "/Beadwork/Beadwork-4.png", category: "Beads" },
-  {  imageSrc: "/Beadwork/Beadwork-5.png", category: "Beads" },
-  {  imageSrc: "/Beadwork/Beadwork.png",   category: "Beads" },
+  {  imageSrc: "/Beadwork/Beadwork-1.webp", category: "Beads" },
+  {  imageSrc: "/Beadwork/Beadwork-2.webp", category: "Beads" },
+  {  imageSrc: "/Beadwork/Beadwork-3.webp", category: "Beads" },
+  {  imageSrc: "/Beadwork/Beadwork-4.webp", category: "Beads" },
+  {  imageSrc: "/Beadwork/Beadwork-5.webp", category: "Beads" },
+  {  imageSrc: "/Beadwork/Beadwork.webp",   category: "Beads" },
 
   // 🏢 Golden Zari Dupatta
-//   {  imageSrc: "/Zardosi/Zardosi-1.png", category: "Golden Zari Dupatta" },
-//   {  imageSrc: "/Zardosi/Zardosi-1.png", category: "Golden Zari Dupatta" },
-//   {  imageSrc: "/Zardosi/Zardosi-1.png", category: "Golden Zari Dupatta" },
-//   {  imageSrc: "/Zardosi/Zardosi-1.png", category: "Golden Zari Dupatta" },
-//   {  imageSrc: "/Zardosi/Zardosi-1.png", category: "Golden Zari Dupatta" },
-//   {  imageSrc: "/Zardosi/Zardosi-1.png", category: "Golden Zari Dupatta" },
+//   {  imageSrc: "/Zardosi/Zardosi-1.webp", category: "Golden Zari Dupatta" },
+//   {  imageSrc: "/Zardosi/Zardosi-1.webp", category: "Golden Zari Dupatta" },
+//   {  imageSrc: "/Zardosi/Zardosi-1.webp", category: "Golden Zari Dupatta" },
+//   {  imageSrc: "/Zardosi/Zardosi-1.webp", category: "Golden Zari Dupatta" },
+//   {  imageSrc: "/Zardosi/Zardosi-1.webp", category: "Golden Zari Dupatta" },
+//   {  imageSrc: "/Zardosi/Zardosi-1.webp", category: "Golden Zari Dupatta" },
 
   // 🛍️ Cutwork
-  {  imageSrc:"/Cutwork/Cutwork-1.png",  category: "Cutwork" },
-  {  imageSrc: "/Cutwork/Cutwork-2.png", category: "Cutwork" },
-  {  imageSrc: "/Cutwork/Cutwork-3.png", category: "Cutwork" },
-  {  imageSrc: "/Cutwork/Cutwork-4.png", category: "Cutwork" },
-  {  imageSrc: "/Cutwork/Cutwork-5.png", category: "Cutwork" },
-  {  imageSrc: "/Cutwork/Cutwork.png",   category: "Cutwork" },
+  {  imageSrc:"/Cutwork/Cutwork-1.webp",  category: "Cutwork" },
+  {  imageSrc: "/Cutwork/Cutwork-2.webp", category: "Cutwork" },
+  {  imageSrc: "/Cutwork/Cutwork-3.webp", category: "Cutwork" },
+  {  imageSrc: "/Cutwork/Cutwork-4.webp", category: "Cutwork" },
+  {  imageSrc: "/Cutwork/Cutwork-5.webp", category: "Cutwork" },
+  {  imageSrc: "/Cutwork/Cutwork.webp",   category: "Cutwork" },
 
   // ⚙️ Sequins
-  {  imageSrc: "/Sequins work/Sequins work-1.png", category: "Sequins" },
-  {  imageSrc: "/Sequins work/Sequins work-2.png", category: "Sequins" },
-  {  imageSrc: "/Sequins work/Sequins work-3.png", category: "Sequins" },
-  {  imageSrc: "/Sequins work/Sequins work-4.png", category: "Sequins" },
-  {  imageSrc: "/Sequins work/Sequins work-5.png", category: "Sequins" },
-  {  imageSrc: "/Sequins work/Sequins work.png",   category: "Sequins" },
+  {  imageSrc: "/Sequins work/Sequins work-1.webp", category: "Sequins" },
+  {  imageSrc: "/Sequins work/Sequins work-2.webp", category: "Sequins" },
+  {  imageSrc: "/Sequins work/Sequins work-3.webp", category: "Sequins" },
+  {  imageSrc: "/Sequins work/Sequins work-4.webp", category: "Sequins" },
+  {  imageSrc: "/Sequins work/Sequins work-5.webp", category: "Sequins" },
+  {  imageSrc: "/Sequins work/Sequins work.webp",   category: "Sequins" },
 
   // 🧰 Thread Work
-  {  imageSrc: "/thread work/thread work-1.png", category: "Thread Work" },
-  {  imageSrc: "/thread work/thread work-2.png", category: "Thread Work" },
-  {  imageSrc: "/thread work/thread work-3.png", category: "Thread Work" },
-  {  imageSrc: "/thread work/thread work-4.png", category: "Thread Work" },
-  {  imageSrc: "/thread work/thread work-5.png", category: "Thread Work" },
-  {  imageSrc: "/thread work/thread work.png",   category: "Thread Work" },
+  {  imageSrc: "/thread work/thread work-1.webp", category: "Thread Work" },
+  {  imageSrc: "/thread work/thread work-2.webp", category: "Thread Work" },
+  {  imageSrc: "/thread work/thread work-3.webp", category: "Thread Work" },
+  {  imageSrc: "/thread work/thread work-4.webp", category: "Thread Work" },
+  {  imageSrc: "/thread work/thread work-5.webp", category: "Thread Work" },
+  {  imageSrc: "/thread work/thread work.webp",   category: "Thread Work" },
 
 
 // 🧰 Mirror Work
-  {  imageSrc: "/Mirror work/Mirror work-1.png", category: "Mirror Work" },
-  {  imageSrc: "/Mirror work/Mirror work-2.png", category: "Mirror Work" },
-  {  imageSrc: "/Mirror work/Mirror work-3.png", category: "Mirror Work" },
-  {  imageSrc: "/Mirror work/Mirror work-4.png", category: "Mirror Work" },
-  {  imageSrc: "/Mirror work/Mirror work-5.png", category: "Mirror Work" },
-  {  imageSrc: "/Mirror work/Mirror work.png",   category: "Mirror Work" },
+  {  imageSrc: "/Mirror work/Mirror work-1.webp", category: "Mirror Work" },
+  {  imageSrc: "/Mirror work/Mirror work-2.webp", category: "Mirror Work" },
+  {  imageSrc: "/Mirror work/Mirror work-3.webp", category: "Mirror Work" },
+  {  imageSrc: "/Mirror work/Mirror work-4.webp", category: "Mirror Work" },
+  {  imageSrc: "/Mirror work/Mirror work-5.webp", category: "Mirror Work" },
+  {  imageSrc: "/Mirror work/Mirror work.webp",   category: "Mirror Work" },
 
 // 🧰 Stone Work
-  {  imageSrc: "/Stone Work/Stone Wrok-1.png", category: "Stone Work" },
-  {  imageSrc: "/Stone Work/Stone Wrok-2.png", category: "Stone Work" },
-  {  imageSrc: "/Stone Work/Stone Wrok-3.png", category: "Stone Work" },
-  {  imageSrc: "/Stone Work/Stone Wrok-4.png", category: "Stone Work" },
-  {  imageSrc: "/Stone Work/Stone Wrok-5.png", category: "Stone Work" },
-  {  imageSrc: "/Stone Work/Stone Wrok.png",   category: "Stone Work" },
+  {  imageSrc: "/Stone Work/Stone Wrok-1.webp", category: "Stone Work" },
+  {  imageSrc: "/Stone Work/Stone Wrok-2.webp", category: "Stone Work" },
+  {  imageSrc: "/Stone Work/Stone Wrok-3.webp", category: "Stone Work" },
+  {  imageSrc: "/Stone Work/Stone Wrok-4.webp", category: "Stone Work" },
+  {  imageSrc: "/Stone Work/Stone Wrok-5.webp", category: "Stone Work" },
+  {  imageSrc: "/Stone Work/Stone Wrok.webp",   category: "Stone Work" },
 
 
 // 🧰 Gota Patti Work 
-  {  imageSrc: "/Gota Patti Work/Gota Patti Work-1.png", category: "Gota Patti Work" },
-  {  imageSrc: "/Gota Patti Work/Gota Patti Work-2.png", category: "Gota Patti Work" },
-  {  imageSrc: "/Gota Patti Work/Gota Patti Work-3.png", category: "Gota Patti Work" },
-  {  imageSrc: "/Gota Patti Work/Gota Patti Work-4.png", category: "Gota Patti Work" },
-  {  imageSrc: "/Gota Patti Work/Gota Patti Work-5.png", category: "Gota Patti Work" },
-  {  imageSrc: "/Gota Patti Work/Gota Patti Work.png",   category: "Gota Patti Work" },
+  {  imageSrc: "/Gota Patti Work/Gota Patti Work-1.webp", category: "Gota Patti Work" },
+  {  imageSrc: "/Gota Patti Work/Gota Patti Work-2.webp", category: "Gota Patti Work" },
+  {  imageSrc: "/Gota Patti Work/Gota Patti Work-3.webp", category: "Gota Patti Work" },
+  {  imageSrc: "/Gota Patti Work/Gota Patti Work-4.webp", category: "Gota Patti Work" },
+  {  imageSrc: "/Gota Patti Work/Gota Patti Work-5.webp", category: "Gota Patti Work" },
+  {  imageSrc: "/Gota Patti Work/Gota Patti Work.webp",   category: "Gota Patti Work" },
 ];
 
 /* ---------------- COMPONENTS & VARIANTS ---------------- */
@@ -179,13 +180,13 @@ const ResultCard = ({ result, index }) => {
             }}
         >
             {/* Image Container */}
-            <div className="relative bg-[#0F0F0F] aspect-[3/2] flex items-center justify-center p-4">
+            <div className=" bg-[#0F0F0F] flex items-center justify-center p-4"> 
                 
                 {/* Always render the image tag, and let the onError handle the fallback logic */}
                 <img
                     src={finalImageSrc}
                     alt={result.title}
-                    className="object-cover w-full h-full rounded-md transition duration-300"
+                    className="object-fit w-full h-auto rounded-md transition duration-300"
                     onError={handleError}
                 />
 

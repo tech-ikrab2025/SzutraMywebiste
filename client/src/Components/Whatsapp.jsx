@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import WappImg from "../../public/whatsapp_btn.png";
+import WappImg from "../../public/whatsapp_btn.webp";
 // --- Framer Motion Variants ---
 
 export const containerVariants = {
@@ -68,7 +68,7 @@ export const FloatingWhatsAppButton = () => {
       {/* Simple WhatsApp Icon (using a unicode character for simplicity, you can use an SVG icon library like Heroicons instead) */}
       <span className="">
         <img
-          src={WappImg} //"https://static.vecteezy.com/system/resources/previews/024/398/617/original/whatsapp-logo-icon-isolated-on-transparent-background-free-png.png"
+          src={WappImg} //"https://static.vecteezy.com/system/resources/previews/024/398/617/original/whatsapp-logo-icon-isolated-on-transparent-background-free-png.webp"
           alt=""
           className="w-30"
         />

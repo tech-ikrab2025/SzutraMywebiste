@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Menu, X, Phone } from 'lucide-react'; // Added Phone icon
+import React, { useState, useRef, useEffect } from 'react';
+import { Menu, X, Phone } from 'lucide-react'; 
 
 // --- Configuration ---
 // !!! IMPORTANT: REPLACE WITH YOUR ACTUAL PHONE NUMBER !!!
@@ -23,6 +23,8 @@ const navLinkStyle = {
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
+    // 1. Create a ref to attach to the header element
+    const menuRef = useRef(null); 
 
     // Define the golden color for consistency
     const GOLD_COLOR = '#cfa866';
@@ -48,23 +50,41 @@ const Header = () => {
         setIsOpen(!isOpen);
     };
 
+    // 2. useEffect for handling click outside
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            // Check if the click occurred outside the menu reference
+            // AND ensure the menu is actually open before closing
+            if (isOpen && menuRef.current && !menuRef.current.contains(event.target)) {
+                setIsOpen(false);
+            }
+        };
+
+        // Attach event listener only when the menu is open
+        if (isOpen) {
+            document.addEventListener("mousedown", handleClickOutside);
+            // Cleanup function to remove the event listener
+            return () => {
+                document.removeEventListener("mousedown", handleClickOutside);
+            };
+        }
+    }, [isOpen]); // Rerun effect whenever the menu state changes
+
     return (
-        <header className="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-sm z-50 rounded-b-lg shadow-xl">
+        // 3. Attach the ref to the root header element
+        <header 
+            ref={menuRef}
+            className="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-sm z-50 rounded-b-lg shadow-xl"
+        >
             <div className="mx-auto px-4 lg:pl-12 lg:pr-8">
-                {/* CRITICAL CHANGE: Increased mobile header height to h-24 (6rem) 
-                    to accommodate a larger logo, then shrinks to lg:h-20 (5rem) on desktop.
-                */}
                 <div className="flex justify-between items-center h-24 lg:h-20 relative">
 
                     {/* 1. Left: Logo/Brand Name */}
                     <div className="flex-shrink-0 flex items-center h-full z-20">
                         <a href="/" className="block h-full w-auto py-2">
                             <img
-                                /* Logo max height set to max-h-full (respecting the new h-24 container)
-                                    and max-h-16 on desktop. 
-                                */
                                 className="h-full w-auto rounded-md max-h-full lg:max-h-16" 
-                                src="/SzutraLogo_1.png"
+                                src="/SzutraLogo_1.webp"
                                 alt="Szutra Brand Logo"
                                 onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/100x40/cfa866/ffffff?text=SZUTRA" }}
                             />

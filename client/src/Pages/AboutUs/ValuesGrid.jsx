@@ -26,7 +26,7 @@ const ValuesGrid = ({ values }) => {
     <section>
       <h2 className="text-4xl font-bold text-center pt-20 mb-12 text-[#cfa866]" style={titleStyle}>Our Guiding Core Values</h2>
       
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 overflow-hidden">
         {values.map((value, index) => (
           <motion.div
             key={index}

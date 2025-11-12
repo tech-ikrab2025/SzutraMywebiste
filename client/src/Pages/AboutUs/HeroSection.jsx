@@ -14,13 +14,14 @@ const HeroSection = ({ mission }) => {
 
   return (
     <div id="about-us" className="bg-gradient-to-r from-gray-900 to-gray-700 text-white py-24 sm:py-50" style={{
-            backgroundImage: "url('/AboutUsImage.png')",
+            backgroundImage: "url('/AboutUsImage.webp')",
             backgroundSize: "Cover",
             backgroundPosition: "center",
           }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.h1
-          className="text-5xl sm:text-5xl font-extrabold tracking-tight"
+          // **FIX 2: Reduced mobile font size and made it responsive**
+          className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight"
           variants={textVariants}
           initial="hidden"
           animate="visible"

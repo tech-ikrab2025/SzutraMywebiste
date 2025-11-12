@@ -74,7 +74,7 @@ const WhySzutraStands = () => {
                 {/* IMAGE CONTAINER: Removed md:pl-5 as we are centering the image */}
                 <motion.div variants={fadeInUp}>
                     <img 
-                      src="/WhyChooseUsImage.png"
+                      src="/WhyChooseUsImage.webp"
                       alt="Marketing team collaborating" 
                       
                       className="rounded-2xl shadow-2xl w-full h-auto object-cover mx-auto" 

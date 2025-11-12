@@ -75,7 +75,7 @@ const HomeThirdSection = () => {
             <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
                 <motion.div variants={fadeInUp} className="md:pl-5">
                     <img 
-                      src="/WhyChooseUsImage.png"
+                      src="/WhyChooseUsImage.webp"
                       alt="Marketing team collaborating" 
                       className="rounded-2xl shadow-2xl w-full h-auto object-cover" mx-auto px-4 
                       onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/600x400/000000/FFFFFF?text=Team+Image'; }}

@@ -4,7 +4,7 @@ const ACCENT_GOLD = '#cfa866';
 
 const HomeForthSection = () => {
     // URL for the teamwork image from your screenshot (Assuming the image is placed at the project root)
-    const imageUrl = './SzutraScrolldesign.png';
+    const imageUrl = './4th section image-1.webp';
     
     // Style for the main headers and titles (Cinzel Decorative)
     const titleStyle = {
@@ -29,7 +29,7 @@ const HomeForthSection = () => {
             >
                 {/* Dark Overlay for better text contrast */}
                 {/* Made the overlay slightly darker (bg-black/70) to ensure the white text pops over a complex image. */}
-                <div className="absolute inset-0 bg-black/70"></div>
+                <div className="absolute inset-0 bg-black/50"></div>
             </div>
 
             {/* 2. CONTENT CONTAINER */}
