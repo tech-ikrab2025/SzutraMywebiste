@@ -74,7 +74,7 @@ const WhySzutraStands = () => {
                 {/* IMAGE CONTAINER: Removed md:pl-5 as we are centering the image */}
                 <motion.div variants={fadeInUp}>
                     <img 
-                      src="/WhyChooseUsImage.webp"
+                      src="/whyszutrastands.webp"
                       alt="Marketing team collaborating" 
                       
                       className="rounded-2xl shadow-2xl w-full h-auto object-cover mx-auto" 
@@ -86,7 +86,7 @@ const WhySzutraStands = () => {
                 <motion.div variants={fadeInUp} className="text-center">
                     <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-none mb-3"
                         style={titleStyle}>
-                        Why Szutra Stands?
+                        Why Szutra?
                     </h2>
                     
                     {/* UNDERLINE: Keeping mx-auto which correctly centers block element */}

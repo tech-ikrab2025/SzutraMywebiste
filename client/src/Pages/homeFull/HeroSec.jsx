@@ -62,7 +62,7 @@ const HeroSection = () => {
                 
                 {/* Main Title */}
                 <h1 
-                    className="text-6xl sm:text-8xl md:text-9xl font-bold leading-none mb-6 drop-shadow-lg"
+                    className="text-6xl sm:text-8xl md:text-9xl font-bold leading-none mb-6 drop-shadow-lg  justify-center text-center"
                     style={titleStyle}
                 >
                     The Zari Legacy

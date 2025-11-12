@@ -289,7 +289,7 @@ try {
           }}>
                 <p>
                   📧 <strong className="text-[#1b2e4e]">Email:</strong>
-                  <br /> salesone@ikrabesol.in
+                  <br /> business@szutra.com
                 </p>
                 <p>
                   📞 <strong className="text-[#1b2e4e]">Phone:</strong>
@@ -336,17 +336,17 @@ try {
             fontFamily: "Playfair Display, Georgia, serif",
             wordSpacing: "5px",
           }}>
-              Branch Office (Siliguri Branch)
+              Own Workshop
               </h3>
               <p className="text-gray-600" style={{
             
             wordSpacing: "5px",
           }}>
-                2nd Floor, Strong enclave,
+                Meer Bazar
                 <br />
-                 Iskcon Mandir Road,
+                 P.O.- Panchla, P.S. - Panchla,
                 <br />
-                Siliguri-734001, 
+                Howrah - 711322
                 <br />
                 West Bengal, India.
               </p>

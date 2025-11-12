@@ -66,7 +66,7 @@ const WelcomeToSzutra = () => {
             <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
                 <motion.div variants={fadeInUp} className="md:pl-5">
                     <img 
-                      src="/WhyChooseUsImage.webp"
+                      src="/AboutUsImage.webp"
                       alt="Marketing team collaborating" 
                       className="rounded-2xl shadow-2xl w-full h-auto object-cover" mx-auto px-4 
                       onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/600x400/000000/FFFFFF?text=Team+Image'; }}
@@ -75,8 +75,13 @@ const WelcomeToSzutra = () => {
                 <motion.div variants={fadeInUp} className="text-center">
                     <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-none mb-3"
                         style={titleStyle}>
-                        Welcome To Szutra
+                        Your Zari Production Partner
                     </h2>
+
+                    <h3 className="text-xl sm:text-2xl md:text-4xl font-bold leading-none mb-3"
+                        style={titleStyle}>
+                        Bulk Custom Zari work
+                    </h3>
                     {/* Luxurious Gold Underline Bar */}
 {/* w-24 (wider), h-1.5 (slightly thicker), and mb-12 (for section spacing) */}
 <div 
@@ -84,14 +89,11 @@ const WelcomeToSzutra = () => {
     style={{ backgroundColor: ACCENT_GOLD }} 
 ></div>
                     <p className="text-gray-800 mb-6 text-lg" >At Szutra, every stitch tells a story.
-            We are a heritage embroidery brand from Howrah, India — where tradition meets creativity.
-            Our team of skilled artisans handcrafts premium zardosi, aari, dabka, sequin, and bead embroidery for fashion designers, boutiques, and global brands.
-            We believe in quality, authenticity, and human touch.
-            Every design is made with love, care, and royal craftsmanship.
+            At Szutra, we are a dedicated manufacturer specializing exclusively in exquisite zari clothing. Our mission is to deliver the best handmade cloths directly to our valued customers who place bulk orders, including fashion houses, designers, and large-scale retailers. We combine the rich tradition of Indian craftsmanship with modern production efficiency. Our team of master artisans ensures every yard of fabric and every piece of attire showcases unparalleled quality, authenticity, and royal craftsmanship. Partner with us for reliable, high-volume supply that never compromises on the artistry of zari embroidery.
             </p>
                     <a
-                    href="/AboutUs" // Set your destination URL here
-                    target="_blank" // This ensures the link opens in a new tab
+                    href="/ContactUs" // Set your destination URL here
+                    // target="_blank" // This ensures the link opens in a new tab
                     //rel="noopener noreferrer" // Security best practice for target="_blank"
                     className={`
                         text-gray-800 font-semibold py-3 px-10 rounded-full shadow-xl 
@@ -103,7 +105,7 @@ const WelcomeToSzutra = () => {
                     style={{ backgroundColor: ACCENT_GOLD }} 
                     aria-label="Shop our new Zari collection now"
                 >
-                    To Know More
+                    ORDER NOW
                 </a>
                 </motion.div>
             </div>

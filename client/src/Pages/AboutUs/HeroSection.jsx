@@ -14,7 +14,7 @@ const HeroSection = ({ mission }) => {
 
   return (
     <div id="about-us" className="bg-gradient-to-r from-gray-900 to-gray-700 text-white py-24 sm:py-50" style={{
-            backgroundImage: "url('/AboutUsImage.webp')",
+            backgroundImage: "url('/WhyChooseUsImage.webp')",
             backgroundSize: "Cover",
             backgroundPosition: "center",
           }}>

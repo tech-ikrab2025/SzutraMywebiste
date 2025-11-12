@@ -29,7 +29,7 @@ export default function Footer() {
   const contactDetails = [
     { icon: <MapPin size={16} />, text: "364, Shantipally, Rajdanga, Kasba, South 24 Parganas, Kolkata-700107 West Bengal, India.", href: "https://www.google.com/maps/search/364,+Shantipally,+Rajdanga,+Kasba,+South+24+Parganas,+Kolkata-700107+West+Bengal,+India./@22.5139614,88.3884803,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTAyOC4wIKXMDSoASAFQAw%3D%3D", target: '_blank' },
     { icon: <Phone size={16} />, text: "+91 801608201", href: "tel:+91801608201" },
-    { icon: <Mail size={16} />, text: "salesone@ikrabesol.in", href: "mailto:inquiries@szutra.com" },
+    { icon: <Mail size={16} />, text: "business@szutra.com", href: "mailto:business@szutra.com" },
   ];
 
   return (
