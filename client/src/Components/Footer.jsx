@@ -116,7 +116,7 @@ export default function Footer() {
         className="text-[##121212] py-5 px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-sm" 
       >
         <p className="text-center md:text-left order-2 md:order-1 mt-3 md:mt-0 opacity-80">
-          Copyright © {currentYear} Teesta Networks Pvt. Ltd. All Rights Reserved.
+          Copyright © {currentYear} i-KRAB e-sol Pvt. Ltd. All Rights Reserved.
         </p>
         
         {/* The legal links are now grouped into one list and moved to the right */}
