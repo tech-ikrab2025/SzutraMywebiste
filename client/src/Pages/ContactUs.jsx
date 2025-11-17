@@ -83,7 +83,7 @@ const ContactUs = () => {
       return;
     }
 try {
-    const res = await axios.post("http://localhost:3000/api/auth/register", formData, {
+    const res = await axios.post("https://szutramywebisteback.onrender.com/api/auth/register", formData, {
         headers: {
           "Content-Type": "application/json",
           "x-auth-token": "A5A38fg7R28A8771E13Q",
