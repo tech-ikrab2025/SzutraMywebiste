@@ -34,8 +34,7 @@ const GalleryThird = () => {
     const scrollToImage = useCallback((index) => {
         if (scrollContainerRef.current) {
             const container = scrollContainerRef.current;
-            const itemWidth = getItemWidth();
-            
+            const itemWidth = getItemWidth();            
             container.scrollTo({
                 left: index * itemWidth,
                 behavior: 'smooth'
@@ -93,7 +92,6 @@ const GalleryThird = () => {
             };
         }
     }, [handleScroll]);
-
 
     return (
         <section className="py-12 sm:py-10 bg-white min-h-screen">

@@ -99,7 +99,7 @@ const PrivacyPolicy = () => {
                 >
                     {/* Removed bg-gradient-to-r from-indigo-400 to-pink-500 */}
                     <h1 
-                        className="text-5xl md:text-7xl font-extrabold leading-tight mt-10" 
+                        className="text-5xl md:text-7xl font-extrabold leading-tight mt-15" 
                         style={titleStyle} // Applies Playfair Display, text-shadow, and ACCENT_GOLD color
                     >
                         PRIVACY POLICY

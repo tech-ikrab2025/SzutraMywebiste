@@ -16,7 +16,6 @@ const itemVariants = {
     transition: { type: "spring", stiffness: 80 } 
   },
 };
-
 // TimelineIconMarker: Small icon on the central spine (No change)
 const TimelineIconMarker = ({ src, alt }) => (
     <div 
@@ -32,7 +31,6 @@ const TimelineIconMarker = ({ src, alt }) => (
         /> 
     </div>
 );
-
 // TimelineIllustration: Full-width container for the image (Minor change to positioning padding)
 const TimelineIllustration = ({ src, alt }) => (
     <div className="w-full h-64 md:h-full overflow-hidden rounded-xl shadow-2xl transition-transform hover:scale-[1.02] duration-300">
@@ -44,35 +42,27 @@ const TimelineIllustration = ({ src, alt }) => (
         />
     </div>
 );
-
-
 const StoryTimeline = ({ story }) => {
     const titleStyle = {
         fontFamily: 'Playfair Display, Georgia, serif', 
         color: ACCENT_GOLD,
-    };
-    
+    };    
   return (
     <section className="relative container mx-auto px-4 py-8 overflow-hidden">
-      <h2 className="text-4xl font-bold text-center mb-16 text-[#cfa866]" style={titleStyle}>Our Journey of Growth</h2>
-      
+      <h2 className="text-4xl font-bold text-center mb-16 text-[#cfa866]" style={titleStyle}>Our Journey of Growth</h2>      
       {/* Central Vertical Timeline Line (Desktop Only) */}
-      <div className="absolute left-1/2 w-0.5 bg-[#cfa866]/30 h-full transform -translate-x-1/2 hidden md:block z-0"></div> 
-      
+      <div className="absolute left-1/2 w-0.5 bg-[#cfa866]/30 h-full transform -translate-x-1/2 hidden md:block z-0"></div>      
       <div className="space-y-32">
         {story.map((item, index) => {
-          const isLeft = index % 2 === 0; // Card on the left side (even index)
-          
+          const isLeft = index % 2 === 0; // Card on the left side (even index)          
           // Determine the order for the two grid columns:
           // Item 0 (isLeft=true): Image (Order 1) | Text (Order 2)
           // Item 1 (isLeft=false): Text (Order 1) | Image (Order 2)
           const textOrder = isLeft ? 'order-2' : 'order-1';
           const imageOrder = isLeft ? 'order-1' : 'order-2';
-
           // Determine the appropriate padding/margin for the gap between card/image and central line
           const textSpacing = isLeft ? 'md:pl-12' : 'md:pr-12';
           const imageSpacing = isLeft ? 'md:pr-12' : 'md:pl-12';
-
           return (
             <motion.div
               key={index}
@@ -135,8 +125,7 @@ const StoryTimeline = ({ story }) => {
                     <div className="md:hidden mb-4">
                         <img src={item.illustration} alt={item.title} className="w-full h-32 object-cover rounded-md" />
                     </div>
-                  }
-                  
+                  }                  
                   <h3 className="text-xl font-bold text-[#a5864e] mt-1">{item.title}</h3> 
                   <p className="mt-2 text-gray-600">{item.description}</p>
                 </div>

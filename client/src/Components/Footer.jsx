@@ -15,7 +15,6 @@ export default function Footer() {
         fontFamily: 'Playfair Display, Georgia, serif', 
         //textShadow: '0 0 10px rgba(0, 0, 0, 0.9)',
     };
-
   // Consolidated links based on the user's provided structure
   const navigationData = [
     { name: "Home", href: "/" },
@@ -23,12 +22,11 @@ export default function Footer() {
     { name: "Contact", href: "/ContactUs" },
     { name: "Privacy Policy", href: "/PrivacyPolicy" },
     { name: "Terms & Condition", href: "/TermsAndConditions" },
-  ];
-  
+  ];  
   // Placeholder contact information
   const contactDetails = [
     { icon: <MapPin size={16} />, text: "364, Shantipally, Rajdanga, Kasba, South 24 Parganas, Kolkata-700107 West Bengal, India.", href: "https://www.google.com/maps/search/364,+Shantipally,+Rajdanga,+Kasba,+South+24+Parganas,+Kolkata-700107+West+Bengal,+India./@22.5139614,88.3884803,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTAyOC4wIKXMDSoASAFQAw%3D%3D", target: '_blank' },
-    { icon: <Phone size={16} />, text: "+91 801608201", href: "tel:+91801608201" },
+    { icon: <Phone size={16} />, text: "+91 8016082014", href: "tel:+918016082014" },
     { icon: <Mail size={16} />, text: "business@szutra.com", href: "mailto:business@szutra.com" },
   ];
 
@@ -58,7 +56,6 @@ export default function Footer() {
             <a href="#" aria-label="Twitter" className="text-[#1d1d1d] hover:text-[#cfa866] transition"><Twitter size={24} /></a>
           </div>
         </div>
-
         {/* Column 2: Navigation Links (Takes 3/12 columns on large screens) */}
         <div className="md:col-span-1 lg:col-span-3">
           <h3 className="font-bold text-lg mb-5 uppercase tracking-wider text-[#cfa866]" style={ParagraphStyle}>
@@ -76,8 +73,7 @@ export default function Footer() {
               </li>
             ))}
           </ul>
-        </div>
-        
+        </div>        
         {/* Column 3: Contact Details (Takes 6/12 columns on large screens) */}
         <div className="md:col-span-1 lg:col-span-6">
           <h3 className="font-bold text-lg mb-5 uppercase tracking-wider text-[#cfa866]" style={ParagraphStyle}>
@@ -107,9 +103,7 @@ export default function Footer() {
             </li> */}
           </ul>
         </div>
-
       </div>
-
       {/* Bottom bar: Copyright and Legal Links */}
       <div 
         style={titleStyle} 
@@ -117,8 +111,7 @@ export default function Footer() {
       >
         <p className="text-center md:text-left order-2 md:order-1 mt-3 md:mt-0 opacity-80">
           Copyright © {currentYear} i-KRAB e-sol Pvt. Ltd. All Rights Reserved.
-        </p>
-        
+        </p>        
         {/* The legal links are now grouped into one list and moved to the right */}
         <div className="space-x-4 order-1 md:order-2">
           <a href="/TermsAndConditions" className="hover:text-[#cfa866] transition">
