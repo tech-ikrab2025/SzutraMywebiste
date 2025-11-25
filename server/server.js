@@ -9,7 +9,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-    origin: "https://szutra.com",  // frontend origin   
+    origin: "http://localhost:5173",  // "https://szutra.com"   
   }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

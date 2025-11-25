@@ -83,7 +83,7 @@ const ContactUs = () => {
       return;
     }
 try {
-    const res = await axios.post("https://szutramywebisteback.onrender.com/api/auth/register", formData, {
+    const res = await axios.post("http://localhost:3000/api/auth/register", formData, {
         headers: {
           "Content-Type": "application/json",
           "x-auth-token": "A5A38fg7R28A8771E13Q",
@@ -260,9 +260,8 @@ try {
                                   : `bg-[#cfa866] hover:bg-[#cfa866]`
                               }`}
                               disabled={Object.values(errors).some((err) => err !== "")} style={{
-            
-            wordSpacing: "5px",
-          }}
+                               wordSpacing: "5px",
+                              }}
                             >
                               Submit Enquiry
                             </motion.button>
@@ -272,81 +271,59 @@ try {
           {/* Section 2: Contact Info (unchanged) */}
           {/* ... existing contact info and address code ... */}
        <div className="lg:col-span-1 space-y-8">
-            {/* Contact Info Card */}
             <motion.div
-              className="bg-white p-8 rounded-xl shadow-xl border-l-4 border-r-4 border-[#cfa866]"
+              className="bg-white p-8 rounded-xl mt-1 block w-full  border-l-4 border-r-4 border-[#cfa866] hover:border-[#cfa866] transition-all duration-800 hover:scale-105 shadow-lg hover:shadow-[#cfa866] focus:outline-none "
               variants={itemVariants}
               transition={{ delay: 0.3 }}
             >
-              <h3 className="text-2xl font-bold text-[#cfa866] mb-4" style={{
-            fontFamily: "Playfair Display, Georgia, serif",
-            wordSpacing: "5px",
-          }}>
+              <h3 className="text-2xl font-bold text-[#cfa866] mb-4">
                 Contact Details
               </h3>
-              <div className="space-y-4 text-gray-600" style={{
-            wordSpacing: "5px",
-          }}>
-                <p>
+              <div className="space-y-4 text-gray-600">
+                <a href="mailto:business@szutra.com">                  
                   📧 <strong className="text-[#1b2e4e]">Email:</strong>
                   <br /> business@szutra.com
-                </p>
+                </a>
                 <p>
                   📞 <strong className="text-[#1b2e4e]">Phone:</strong>
                   <br /> +91 - 8016082014
                 </p>
                 <p>
                   🕒 <strong className="text-[#1b2e4e]">Hours:</strong>
-                  <br /> Mon - Sat: 10:30 AM - 7:00 PM (EST)
+                  <br /> Mon - Sat: 10:30 AM - 7:00 PM
                 </p>
               </div>
             </motion.div>
 
-            {/* Address Card */}
             <motion.div
-              className="bg-white p-8 rounded-xl shadow-xl border-l-4 border-r-4 border-[#cfa866]"
+              className="bg-white p-8 rounded-xl shadow-xl mt-1 block w-full  border-l-4 border-r-4 border-[#cfa866] hover:border-[#cfa866] transition-all duration-800 hover:scale-105  hover:shadow-[#cfa866] focus:outline-none ]"
               variants={itemVariants}
-              transition={{ delay: 0.4 }}
             >
-              <h3 className="text-2xl font-bold text-[#cfa866] mb-4" style={{
-            fontFamily: "Playfair Display, Georgia, serif",
-            wordSpacing: "5px",
-          }}>
+              <h3 className="text-2xl font-bold text-[#cfa866] mb-4">
                 Main Office (Kolkata Branch)
               </h3>
-              <p className="text-gray-600" style={{
-           
-            wordSpacing: "5px",
-          }}>
-                364, Shantipally, Rajdanga, 
+              <p className="text-gray-600">
+                364, Shantipally, Rajdanga,
                 <br />
-                Kasba, South 24 Parganas,
-                <br />
-                Kolkata-700107
+                Kasba, Kolkata-700107,
                 <br />
                 West Bengal, India.
               </p>
             </motion.div>
+
             <motion.div
-              className="bg-white p-8 rounded-xl shadow-xl border-l-4 border-r-4 border-[#cfa866]"
+              className="bg-white p-8 rounded-xl shadow-xl  border-[#cfa866] mt-1 block w-full  border-l-4 border-r-4  hover:border-[#cfa866] transition-all duration-800 hover:scale-105 hover:shadow-[#cfa866] focus:outline-none "
               variants={itemVariants}
-              transition={{ delay: 0.4 }}
             >
-              <h3 className="text-2xl font-bold text-[#cfa866] mb-4" style={{
-            fontFamily: "Playfair Display, Georgia, serif",
-            wordSpacing: "5px",
-          }}>
-              Own Workshop
+              <h3 className="text-2xl font-bold text-[#cfa866] mb-4">
+                Branch Office (Siliguri)
               </h3>
-              <p className="text-gray-600" style={{
-            
-            wordSpacing: "5px",
-          }}>
-                Meer Bazar
+              <p className="text-gray-600">
+                2nd Floor, Strong Enclave,
                 <br />
-                 P.O.- Panchla, P.S. - Panchla,
+                Iskcon Mandir Road,
                 <br />
-                Howrah - 711322
+                Siliguri-734001,
                 <br />
                 West Bengal, India.
               </p>

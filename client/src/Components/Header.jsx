@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react'; 
+import { Link} from "react-router-dom";
 
 // --- Configuration ---
 // !!! IMPORTANT: REPLACE WITH YOUR ACTUAL PHONE NUMBER !!!
@@ -8,11 +9,11 @@ const CALL_TO_ACTION_LINK = `tel:${PHONE_NUMBER.replace(/[^0-9+]/g, '')}`; // Fo
 
 // Define the menu links with the correct 'href' and 'target' properties.
 const navLinks = [
-    { name: 'Home', href: '/', target: '_self' },
-    { name: 'Gallery', href: '/GalleryFull', target: '_self' },
-    { name: 'Contact Us', href: '/ContactUs', target: '_self' },
-    { name: 'About Us', href: '/AboutUs', target: '_self' },
-    { name: 'Privacy Policy', href: '/PrivacyPolicy', target: '_self' },
+    { name: 'Home', href: '/'},
+    { name: 'Gallery', href: '/GalleryFull'},
+    { name: 'Contact Us', href: '/ContactUs'},
+    { name: 'About Us', href: '/AboutUs'},
+    { name: 'Privacy Policy', href: '/PrivacyPolicy'},
 ];
 
 // Define the style object for the navigation text
@@ -81,14 +82,14 @@ const Header = () => {
 
                     {/* 1. Left: Logo/Brand Name */}
                     <div className="flex-shrink-0 flex items-center h-full z-20">
-                        <a href="/" className="block h-full w-auto py-2">
+                        <Link to="/" className="block h-full w-auto py-2">
                             <img
                                 className="h-full w-auto rounded-md max-h-full lg:max-h-16" 
                                 src="/SzutraLogo_1.webp"
                                 alt="Szutra Brand Logo"
                                 onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/100x40/cfa866/ffffff?text=SZUTRA" }}
                             />
-                        </a>
+                        </Link>
                     </div>
 
                     {/* 2. Center: Desktop Navigation Links (Absolute Center) */}
@@ -96,12 +97,10 @@ const Header = () => {
                         <nav className="flex space-x-8 h-full items-center pointer-events-auto">
                             {navLinks.map((link) => {
                                 const active = isActive(link.href);
-
                                 return (
-                                    <a
+                                    <Link
                                         key={link.name}
-                                        href={link.href}
-                                        target={link.target}
+                                        to={link.href}                                        
                                         rel={link.target === '_blank' ? 'noopener noreferrer' : undefined}
                                         // --- FONT STYLE APPLIED HERE (Desktop) ---
                                         style={navLinkStyle} 
@@ -115,7 +114,7 @@ const Header = () => {
                                         `}
                                     >
                                         {link.name}
-                                    </a>
+                                    </Link>
                                 );
                             })}
                         </nav>
@@ -187,9 +186,9 @@ const Header = () => {
                         const active = isActive(link.href);
 
                         return (
-                            <a
+                            <Link
                                 key={link.name}
-                                href={link.href}
+                                to={link.href}
                                 target={link.target}
                                 rel={link.target === '_blank' ? 'noopener noreferrer' : undefined}
                                 // --- FONT STYLE APPLIED HERE (Mobile) ---
@@ -204,7 +203,7 @@ const Header = () => {
                                 onClick={() => setIsOpen(false)}
                             >
                                 {link.name}
-                            </a>
+                            </Link>
                         );
                     })}
                 </div>

@@ -1,5 +1,6 @@
 import React from "react";
-import { Mail, Phone, MapPin, Instagram, Facebook, Twitter, Link } from 'lucide-react'; // Using Lucide for icons
+import { Mail, Phone, MapPin, Instagram, Facebook, Twitter } from 'lucide-react'; // Using Lucide for icons
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -37,14 +38,14 @@ export default function Footer() {
         
         {/* Column 1: Brand Focus (Takes 3/12 columns on large screens) */}
         <div className="md:col-span-2 lg:col-span-3 space-y-4">
-          <a href="/" className="block h-1px w-2px py-2"> 
+          <Link to="/" className="block h-1px w-2px py-2"> 
               <img
                 className="h-1px w-2px rounded-md "
                 src="/SzutraLogo_1.webp"
                 alt="Szutra Brand Logo"
                 onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/100x40/cfa866/ffffff?text=SZUTRA" }}
               />
-            </a>
+            </Link>
           <p className="text-sm text-[#1d1d1d] opacity-80 max-w-xs">
             Curators of bespoke zari luxury, supplying the world's finest fashion houses with hand-woven heritage.
           </p>
@@ -67,9 +68,9 @@ export default function Footer() {
                 key={i}
                 className="text-[#1d1d1d] cursor-pointer text-base transition-all duration-200 hover:text-[#cfa866] hover:translate-x-1"
               >
-                <a href={item.href}>
+                <Link to={item.href}>
                   {item.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -114,13 +115,13 @@ export default function Footer() {
         </p>        
         {/* The legal links are now grouped into one list and moved to the right */}
         <div className="space-x-4 order-1 md:order-2">
-          <a href="/TermsAndConditions" className="hover:text-[#cfa866] transition">
+          <Link to="/TermsAndConditions" className="hover:text-[#cfa866] transition">
             Terms of Use
-          </a>
+          </Link>
           <span className="opacity-50">|</span>
-          <a href="/PrivacyPolicy" className="hover:text-[#cfa866] transition">
+          <Link to="/PrivacyPolicy" className="hover:text-[#cfa866] transition">
             Privacy Policy
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

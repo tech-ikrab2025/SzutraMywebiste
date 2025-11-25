@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link} from "react-router-dom";
 // Re-using the color constants from your other component for consistency
 const ACCENT_GOLD = '#cfa866';
 const PRIMARY_BLUE = '#1b2e4e';
@@ -249,8 +249,8 @@ const HomeGallerySection = () => {
                                     key={product.id}
                                     className="flex-none w-72 snap-center rounded-lg shadow-xl bg-white overflow-hidden transition-transform duration-300 hover:scale-105"
                                 >
-                                    <a
-                                        href={`/product-details?id=${product.id}&heading=${encodeURIComponent(product.alt)}&image=${encodeURIComponent(product.src)}&desc=${encodeURIComponent(product.productDetails)}`}
+                                    <Link
+                                        to={`/product-details?id=${product.id}&heading=${encodeURIComponent(product.alt)}&image=${encodeURIComponent(product.src)}&desc=${encodeURIComponent(product.productDetails)}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="block h-full w-full group"
@@ -298,7 +298,7 @@ const HomeGallerySection = () => {
                                                 </span>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                             ))}
                         </div>
