@@ -4,7 +4,7 @@ import { Link} from "react-router-dom";
 
 // --- Configuration ---
 // !!! IMPORTANT: REPLACE WITH YOUR ACTUAL PHONE NUMBER !!!
-const PHONE_NUMBER = '+911234567890';
+const PHONE_NUMBER = '+918016082014';
 const CALL_TO_ACTION_LINK = `tel:${PHONE_NUMBER.replace(/[^0-9+]/g, '')}`; // Format for tel: link
 
 // Define the menu links with the correct 'href' and 'target' properties.

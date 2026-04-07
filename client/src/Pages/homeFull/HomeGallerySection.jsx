@@ -250,7 +250,7 @@ const HomeGallerySection = () => {
                                     className="flex-none w-72 snap-center rounded-lg shadow-xl bg-white overflow-hidden transition-transform duration-300 hover:scale-105"
                                 >
                                     <Link
-                                        to={`/product-details?id=${product.id}&heading=${encodeURIComponent(product.alt)}&image=${encodeURIComponent(product.src)}&desc=${encodeURIComponent(product.productDetails)}`}
+                                        to={`/productdetails?id=${product.id}&heading=${encodeURIComponent(product.alt)}&image=${encodeURIComponent(product.src)}&desc=${encodeURIComponent(product.productDetails)}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="block h-full w-full group"

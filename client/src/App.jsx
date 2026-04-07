@@ -23,7 +23,7 @@ function App() {
           <Route path="/AboutUs" element={<AboutUs />} /> 
           <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />  
           <Route path="/TermsAndConditions" element={<TermsAndConditions />} />  
-          <Route path="/product-details" element={<ProductDetailPage />} />
+          <Route path="/productdetails" element={<ProductDetailPage />} />
         </Routes>
         <FloatingWhatsAppButton/> 
    <Footer/>
