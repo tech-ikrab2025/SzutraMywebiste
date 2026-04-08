@@ -52,9 +52,9 @@ export default function Footer() {
 
           {/* Social Icons - Placed here for a clean look */}
           <div className="flex space-x-4 pt-4">
-            <a href="#" aria-label="Facebook" className="text-[#1d1d1d] hover:text-[#cfa866] transition"><Facebook size={24} /></a>
-            <a href="#" aria-label="Instagram" className="text-[#1d1d1d] hover:text-[#cfa866] transition"><Instagram size={24} /></a>
-            <a href="#" aria-label="Twitter" className="text-[#1d1d1d] hover:text-[#cfa866] transition"><Twitter size={24} /></a>
+            <a href="https://www.facebook.com/theszutra" aria-label="Facebook" className="text-[#1d1d1d] hover:text-[#cfa866] transition"><Facebook size={24} /></a>
+            <a href="https://www.instagram.com/theszutra" aria-label="Instagram" className="text-[#1d1d1d] hover:text-[#cfa866] transition"><Instagram size={24} /></a>
+            <a href="https://x.com/theszutra" aria-label="Twitter" className="text-[#1d1d1d] hover:text-[#cfa866] transition"><Twitter size={24} /></a>
           </div>
         </div>
         {/* Column 2: Navigation Links (Takes 3/12 columns on large screens) */}
