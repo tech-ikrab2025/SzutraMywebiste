@@ -110,7 +110,7 @@ const WhySzutraStands = () => {
                     </p>
                     
                     {/* Stats are already centered */}
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center" style={ParagraphStyle}>
+{/*                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center" style={ParagraphStyle}>
                         {stats.map(stat => (
                             <div key={stat.label}>
                                 <h3 className="text-5xl font-bold text-[#cfa866]">
@@ -119,7 +119,7 @@ const WhySzutraStands = () => {
                                 <p className="text-gray-800 mt-2">{stat.label}</p>
                             </div>
                         ))}
-                    </div>
+                    </div> */}
                 </motion.div>
             </div>
         </AnimatedSection>
